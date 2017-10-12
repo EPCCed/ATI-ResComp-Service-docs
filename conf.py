@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ATI Service'
+project = u'ATI Research Computing Service'
 copyright = u'2017, EPCC'
 author = u'EPCC'
 
