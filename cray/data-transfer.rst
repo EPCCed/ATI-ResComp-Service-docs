@@ -12,12 +12,12 @@ Copying a file from your local machine onto the ATI Urika
 
 The following command ::
 
-	scp -o "ProxyCommand ssh tsloan@hydra-vpn.epcc.ed.ac.uk -W %h:%p" dummy-file tsloan@urika1:/home/users/tsloan/
+	scp -o "ProxyCommand ssh your-hydra-vpn-username@hydra-vpn.epcc.ed.ac.uk -W %h:%p" dummy-file your-urika-username@urika1:/home/users/your-urika-username/
 
 copies the file called ``dummy-file`` from the local directory on the local machine to 
-the directory ``/home/users/tsloan/`` on the ATI Urika. 
+the directory ``/home/users/your-urika-username/`` on the ATI Urika. 
 
-The ``-o "ProxyCommand ssh tsloan@hydra-vpn.epcc.ed.ac.uk -W %h:%p"`` is needed because access to the ATI Urika is through hydra-vpn.epcc.ed.ac.uk.
+The ``-o "ProxyCommand ssh your-hydra-vpn-username@hydra-vpn.epcc.ed.ac.uk -W %h:%p"`` is needed because access to the ATI Urika is through hydra-vpn.epcc.ed.ac.uk.
 
 Note that the first time you execute this command or a similar one that you may be asked to confirm machine fingerprints.
 	
@@ -27,9 +27,9 @@ Retrieving a file from the ATI Urika to your local machine
 
 The following command ::
 
-	scp -o "ProxyCommand ssh tsloan@hydra-vpn.epcc.ed.ac.uk -W %h:%p" tsloan@urika1:/home/users/tsloan/urika-dummy-file copy-of-urika-dummy-file
+	scp -o "ProxyCommand ssh your-hydra-vpn-username@hydra-vpn.epcc.ed.ac.uk -W %h:%p" your-urika-username@urika1:/home/users/your-urika-username/urika-dummy-file copy-of-urika-dummy-file
 
-copies the called ``urika-dummy-file`` from the directory ``/home/users/tsloan/`` on the ATI Urika to the 
+copies the called ``urika-dummy-file`` from the directory ``/home/users/your-urika-username/`` on the ATI Urika to the 
 user's local directory on their local machine.
 
 
@@ -48,7 +48,8 @@ this command must be executed as follows on the ATI Urika ::
 
 	ssh 172.24.40.13 'wget -U firefox http://www.gutenberg.org/cache/epub/76/pg76.txt' >> pg76.txt
 	
-where 172.24.40.13 is the IP address of hydra-vpn.epcc.ed.ac.uk. 
+where 172.24.40.13 is the IP address of hydra-vpn.epcc.ed.ac.uk.  When you execute this command you
+will be prompted to provide the password for your hydra-vpn account.
 
 Note this means that a copy of the file being transferred will also reside in the user's account on hydra-vpn.epcc.ed.ac.uk.
 
