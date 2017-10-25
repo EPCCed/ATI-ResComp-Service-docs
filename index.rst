@@ -25,6 +25,7 @@ This documentation contains:
 
    cray/introduction
    cray/connecting
+   cray/data-transfer 
    
 .. toctree::
    :maxdepth: 2
