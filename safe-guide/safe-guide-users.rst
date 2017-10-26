@@ -167,16 +167,16 @@ you will be informed by email; this means that you can come back to SAFE
 and `pick up your new password <#getpass>`__.
 
 Alternatively on the ATI Urika machine you can
-simply log in to the command line command
+simply log in to the command line and execute
 
 ::
 
     change_ldap_passwd
 
 You will then be prompted to enter your your
-new password twice followed by you current password (i.e. the ldap password).
-Note that when you change your password on the service machine in this
-way, this is not reflected on the SAFE.
+new password twice followed by your current password (i.e. the ldap password).
+Note: when you change your password on the service machine in this
+way, this is NOT reflected on the SAFE.
 
 User Mailing Options
 --------------------
