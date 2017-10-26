@@ -60,3 +60,8 @@ Usage Restrictions
 
 #. ATI Cray GX system users may not make any public presentation or publish any paper or report on the Equipment or its performance without receiving prior express written consent from Cray. ATI users must provide any results from work on the system and methodology as to how the Results were obtained to Cray. Cray is allowed to use such results used in marketing collateral; press releases, white papers, etc. Cray may share Results with Intel.
 #. ATI users may therefore not make any public presentation or publish any paper or report on the Urika GX hardware or software or its performance without receiving prior express written consent from the ATI Research Computing Service Manager
+
+Software troubleshooting
+------------------------
+
+#. Using Jupyter through the Urika web interface: when you first get your Urika account, you must first log in directly to the command line (see :doc:`connecting`).  This ensures that a home directory is created for you. If you do NOT do this then if you attempt to use Jupyter through the Urika web interface then after you enter your Urika username and password you will get the error  "500 : Internal Server Error".
