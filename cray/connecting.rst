@@ -8,7 +8,8 @@ a user account on BOTH the Urika and hydra-vpn.epcc.ed.ac.uk. See the chapter
 Access to the ATI Cray Urika service is via SSH. The applications software 
 on the Cray Urika itself can be accessed via a web browser. This chapter explains 
 how to setup an SSH tunnel from hydra-vpn.epcc.ed.ac.uk to the Urika service
-so that a web browser can be used to access the applications software.
+so that a web browser can be used to access the applications software. It also explains 
+how to access the Urika command line directly.
 
 The instructions are based upon using PuTTY as the SSH client software on Windows 
 (see `Setting up an SSH tunnel using PuTTY`_ below) and Mozilla Firefox as the web browser
@@ -16,6 +17,11 @@ The instructions are based upon using PuTTY as the SSH client software on Window
 be used if they are suitably configured. When using a Windows PC, the hosts 
 file also needs to be modified (see `Modifying the hosts file`_ below). Once you have done all this, following the instructions in 
 `Using Mozilla Firefox to connect the Urika User Interface`_
+
+If you wish to access the Urika command line directly then please follow the instructions 
+`Connecting to Urika command line using PuTTY`_
+below. 
+
 
 Setting up an SSH tunnel using PuTTY
 ------------------------------------
