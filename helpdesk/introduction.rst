@@ -24,7 +24,7 @@ How the helpdesk ticket system works
 ------------------------------------
 
 When a query is submitted by email it is placed in the ATI SAFE query system 
-(:doc:`../safe-guide/introduction`).
+(see :doc:`../safe-guide/introduction`).
 
 When you email your query, you will normally get an automatic acknowledgment by email, 
 including a tracking ID, within a few minutes. If you submit your query through SAFE, 
