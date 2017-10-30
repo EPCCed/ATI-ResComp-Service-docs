@@ -10,23 +10,23 @@ and the documentation for the `ARCHER National Supercomputing Service <http://ww
 
 The ATI Research Computing Service currently consists of: 
 
+- a Helpdesk, run by EPCC.
 - a Cray Urika GX system. 
 
 This documentation contains:
 
-- :ref:`CrayUrikaUserGuide`: general information on how to access and connect to this system. 
+- :ref:`Helpdesk`: general information on how to contact the Helpdesk.
 - :ref:`ATISAFEDocumentation`: general information on how to use the ATI SAFE for helpdesk and support, managing user accounts and project research computing resources, and obtaining resource usage reports.
+- :ref:`CrayUrikaUserGuide`: general information on how to access and connect to this system. 
  
-
 .. toctree::
    :maxdepth: 2
-   :caption: Cray Urika User Guide
-   :name: CrayUrikaUserGuide
+   :caption: Helpdesk
+   :name: Helpdesk
 
-   cray/introduction
-   cray/connecting
-   cray/data-transfer 
-   
+   helpdesk/introduction
+   helpdesk/personal-data-privacy-policy
+ 
 .. toctree::
    :maxdepth: 2
    :caption: ATI SAFE Documentation
@@ -36,3 +36,11 @@ This documentation contains:
    safe-guide/safe-guide-users
    safe-guide/safe-guide-pi
    
+.. toctree::
+   :maxdepth: 2
+   :caption: Cray Urika User Guide
+   :name: CrayUrikaUserGuide
+
+   cray/introduction
+   cray/connecting
+   cray/data-transfer 
