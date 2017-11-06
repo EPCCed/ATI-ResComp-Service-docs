@@ -33,24 +33,5 @@ copies the called ``urika-dummy-file`` from the directory ``/home/users/your-uri
 user's local directory on their local machine.
 
 
-Using wget on the ATI Urika 
----------------------------
-
-Some of the user documentation for the software available on the ATI Urika 
-refers to the use of ``wget`` in Urika command line examples.  For example in the 
-`Urika GX Analytic Applications Guide <http://docs.cray.com/PDF/Urika-GX_Analytics_Applications_Guide_12UP00_S-3015.pdf>`_, 
-section 4.3, bullet 2 has the command ::
-
-	$ wget -U firefox http://www.gutenberg.org/cache/epub/76/pg76.txt
-
-Given that access to the Urika is via ssh through hydra-vpn.epcc.ed.ac.uk then 
-this command must be executed as follows on the ATI Urika ::
-
-	ssh 172.24.40.13 'wget -U firefox http://www.gutenberg.org/cache/epub/76/pg76.txt' >> pg76.txt
-	
-where 172.24.40.13 is the IP address of hydra-vpn.epcc.ed.ac.uk.  When you execute this command you
-will be prompted to provide the password for your hydra-vpn account.
-
-Note this means that a copy of the file being transferred will also reside in the user's account on hydra-vpn.epcc.ed.ac.uk.
 
 	
