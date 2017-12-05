@@ -22,7 +22,7 @@ If you wish to access the Urika command line directly then please follow the ins
 `Connecting to Urika command line using PuTTY`_
 below. 
 
-The section `Connecting to Urika using a MacOs`_ explains how to access the Urika command line and web interface using MacOs.
+The section `Connecting to Urika using MacOs`_ explains how to access the Urika command line and web interface using MacOs.
 
 Setting up an SSH tunnel using PuTTY
 ------------------------------------
@@ -133,15 +133,13 @@ Or, if you have a different username on your Mac than on Urika, use this command
 
 Replace <username> with the Urika login name. This connects to Urika command line and sets up the port forwarding for viewing the web interface. It replaces the sections `Setting up an SSH tunnel using PuTTY`_ and `Connecting to Urika command line using PuTTY`_ above.
 
-http://ati-rescomp-service-docs.readthedocs.io/en/latest/cray/connecting.html
-
 (The command should work for Unix/Linux too.)
 
 To view the Urika web interface follow the instructions in the above sections `Configuring Mozilla Firefox`_, 
-`Modifying the hosts file`_, 
+`Modifying the hosts file`_ (Note that On MacOS (and Linux) the hosts file is located in `etc/hosts`) and  
 `Using Mozilla Firefox to connect the Urika User Interface`_. 
 
-On MacOS (and Linux) the hosts file is located in `etc/hosts`.
+
 
 
 
