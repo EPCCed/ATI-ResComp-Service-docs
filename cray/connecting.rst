@@ -123,7 +123,7 @@ and when prompted type in the password for your **Urika** account.	You will then
 Connecting to Urika using MacOs
 -------------------------------
 
-1. Open the Terminal and type:
+Open the Terminal and type:
 
 ``ssh -D 2222 hydra-vpn.epcc.ed.ac.uk``
 
