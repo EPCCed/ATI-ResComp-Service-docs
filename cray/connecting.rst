@@ -22,6 +22,7 @@ If you wish to access the Urika command line directly then please follow the ins
 `Connecting to Urika command line using PuTTY`_
 below. 
 
+The section `Connecting to Urika using a MacOs`_ explains how to access the Urika command line and web interface using MacOs.
 
 Setting up an SSH tunnel using PuTTY
 ------------------------------------
@@ -118,4 +119,31 @@ Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 4. At the resulting command line type in 
 ``ssh your-urika-username@172.24.40.11`` or ``ssh your-urika-username@172.24.40.12``
 and when prompted type in the password for your **Urika** account.	You will then be presented with the Urika command line.
+
+Connecting to Urika using MacOs
+-------------------------------
+
+1. Open the Terminal and type:
+
+``ssh -D 2222 hydra-vpn.epcc.ed.ac.uk``
+
+Or, if you have a different username on your Mac than on Urika, use this command:
+
+``ssh -D 2222 <username>@hydra-vpn.epcc.ed.ac.uk``
+
+Replace <username> with the Urika login name. This connects to Urika command line and sets up the port forwarding for viewing the web interface. It replaces the sections `Setting up an SSH tunnel using PuTTY`_ and `Connecting to Urika command line using PuTTY`_ above.
+
+http://ati-rescomp-service-docs.readthedocs.io/en/latest/cray/connecting.html
+
+(The command should work for Unix/Linux too.)
+
+To view the Urika web interface follow the instructions in the above sections `Configuring Mozilla Firefox`_, 
+`Modifying the hosts file`_, 
+`Using Mozilla Firefox to connect the Urika User Interface`_. 
+
+On MacOS (and Linux) the hosts file is located in `etc/hosts`.
+
+
+
+
 
