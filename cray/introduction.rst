@@ -7,6 +7,9 @@ This chapter contains information about the ATI service on the Cray Urika GX sys
 - `Requesting access to the ATI Cray Urika GX system`_ 
 - the `Early Access Service`_
 - `Usage Restrictions`_
+- `Training Materials`_
+- `Software troubleshooting`_
+
 
 Where appropriate it contains links to Cray's documentation for the system.
 
@@ -58,8 +61,14 @@ This section explains how the Early Access service on the Cray Urika GX system o
 Usage Restrictions 
 ------------------
 
-#. ATI Cray GX system users may not make any public presentation or publish any paper or report on the Equipment or its performance without receiving prior express written consent from Cray. ATI users must provide any results from work on the system and methodology as to how the Results were obtained to Cray. Cray is allowed to use such results used in marketing collateral; press releases, white papers, etc. Cray may share Results with Intel.
+#. ATI Cray GX system users may not make any public presentation or publish any paper or report on the Equipment or its performance without receiving prior express written consent from Cray. ATI users must provide any results from work on the system and methodology as to how the Results were obtained to Cray. Cray is allowed to use such results used in marketing collateral; press releases, white papers, etc. Cray may share Results with Intel.  
 #. ATI users may therefore not make any public presentation or publish any paper or report on the Urika GX hardware or software or its performance without receiving prior express written consent from the ATI Research Computing Service Manager
+
+Training Materials 
+------------------
+
+#. The slides from the Urika training course given by Cray in December 2017 are `available <https://cray.app.box.com/v/ati-training-dec-2017>`_.
+#. These slides provide an overview of the hardware, the software stack, use of applications (Hadoop, Spark, Cray Graph Engine, Jupyter Notebooks), resource management and case studies. 
 
 Software troubleshooting
 ------------------------
