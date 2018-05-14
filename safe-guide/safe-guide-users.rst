@@ -23,16 +23,15 @@ How to register on the ATI SAFE
    email address you provided. You can then login with that email
    address and password
 
-| At this point your account is registered on the ATI SAFE but you do not
-  have a machine account on the ATI Service. To obtain a machine account on
-  the ATI Service you require a *Project Code*. Your project's PI or Project
-  Manager should be able to supply you with these details.
-| Once you have them you should:
+At this point your account is registered on the ATI SAFE but you do not
+have a machine account on the ATI Service.
+
+To obtain a machine account on the ATI Service you require a 
+*Project Code*. Your project's PI or Project Manager should be able to
+supply you with these details. Once you have them you should:
 
 #. Log into the ATI SAFE (see `How to login to the ATI SAFE`_)
-#. On the Main page, click the "Request New Account" button.
-#. Select the correct project from the drop down list
-
+#. Request machine account (see `How to request an account for an ATI Research Computing Service machine`_).
 
 .. _login:
 
