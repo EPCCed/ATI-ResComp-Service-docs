@@ -18,7 +18,7 @@ How to register on the ATI SAFE
    
 #. Fill in your personal details. You can come back later and change
    them if you wish
-#. Click "Submit"
+#. Click "Register"
 #. You are now registered. Your ATI SAFE password will be emailed to the
    email address you provided. You can then login with that email
    address and password
