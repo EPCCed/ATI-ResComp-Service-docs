@@ -5,7 +5,7 @@ data science platform hosted by [EPCC](http://www.epcc.ed.ac.uk)
 for the [Alan Turing Institute](http://www.turing.ac.uk).
 
 For the current, rendered, documentation, see
-[ATI Research Computing Service](http://ati-rescomp-service-docs.readthedocs.io/en/latest/index.html
+[ATI Research Computing Service](http://ati-rescomp-service-docs.readthedocs.io/en/latest/index.html)
 on [Read the Docs](https://readthedocs.org).
 
 The [Sphinx](http://www.sphinx-doc.org/) Python documentation generator
