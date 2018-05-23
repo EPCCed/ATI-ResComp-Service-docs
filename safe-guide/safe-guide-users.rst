@@ -18,21 +18,20 @@ How to register on the ATI SAFE
    
 #. Fill in your personal details. You can come back later and change
    them if you wish
-#. Click "Submit"
+#. Click "Register"
 #. You are now registered. Your ATI SAFE password will be emailed to the
    email address you provided. You can then login with that email
    address and password
 
-| At this point your account is registered on the ATI SAFE but you do not
-  have a machine account on the ATI Service. To obtain a machine account on
-  the ATI Service you require a *Project Code*. Your project's PI or Project
-  Manager should be able to supply you with these details.
-| Once you have them you should:
+At this point your account is registered on the ATI SAFE but you do not
+have a machine account on the ATI Service.
+
+To obtain a machine account on the ATI Service you require a 
+*Project Code*. Your project's PI or Project Manager should be able to
+supply you with these details. Once you have them you should:
 
 #. Log into the ATI SAFE (see `How to login to the ATI SAFE`_)
-#. On the Main page, click the "Request New Account" button.
-#. Select the correct project from the drop down list
-
+#. Request machine account (see `How to request an account for an ATI Research Computing Service machine`_).
 
 .. _login:
 
@@ -94,7 +93,7 @@ How to reset your ATI SAFE password
 
 SAFE will only mail to email addresses it already knows. But email is
 not a secure medium, so if you change your password this way, you should
-immediately change it again `from inside the SAFE. 
+immediately change it again from inside the SAFE. 
 
 Of course, anyone could go to SAFE, type your email address and request
 a new password by clicking "Email". If that happens you will receive an
@@ -121,7 +120,7 @@ How to request an account for an ATI Research Computing Service machine
 Next you will be asked to accept the Terms and Conditions of
 Access by clicking the appropriate button. When you do this, you will be sent an
 acknowledgment by email, which will include your ATI SAFE password— you
-should `change this as soon as possible. 
+should change this as soon as possible. 
 
 Now you have to wait for your PI or project manager to accept your
 request to register. When this has happened, the systems team are
@@ -166,17 +165,30 @@ Now the systems team will change your password. When this has been done,
 you will be informed by email; this means that you can come back to SAFE
 and `pick up your new password <#getpass>`__.
 
-Alternatively on the ATI Urika machine you can
-simply log in to the command line and execute
+How to change a password on your machine account
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-::
+This is machine-specific.
+
+**hydra-vpn.epcc.ed.ac.uk gateway**:
+
+1. At the command-line, run::
+
+    passwd
+
+2. You will be prompted to enter your old password.
+3. You will be prompted to enter your new password twice.
+
+**ATI Cray Urika**:
+
+1. At the command-line, run::
 
     change_ldap_passwd
 
-You will then be prompted to enter your your
-new password twice followed by your current password (i.e. the ldap password).
-Note: when you change your password on the service machine in this
-way, this is NOT reflected on the SAFE.
+2. You will be prompted to enter your new password twice.
+3. You will be prompted to enter your old password.
+
+**Note:** When you change your password on machines in this way, the changes are NOT reflected on the SAFE, so please remember your new password.
 
 User Mailing Options
 --------------------
