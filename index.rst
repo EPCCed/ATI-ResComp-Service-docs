@@ -18,7 +18,11 @@ This documentation contains:
 - :ref:`Helpdesk`: general information on how to contact the Helpdesk.
 - :ref:`ATISAFEDocumentation`: general information on how to use the ATI SAFE for helpdesk and support, managing user accounts and project research computing resources, and obtaining resource usage reports.
 - :ref:`CrayUrikaUserGuide`: general information on how to access and connect to this system. 
- 
+
+How we collect, use and share information about your use of the service are explained in the  :doc:`helpdesk/personal-data-privacy-policy`.
+
+How the information you provide is used to administer your use of the services through the ATI SAFE helpdesk software is explained `here <https://safe.epcc.ed.ac.uk/ati/privacy_policy.jsp>`_.
+
 .. toctree::
    :maxdepth: 2
    :caption: Helpdesk
