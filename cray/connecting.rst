@@ -400,5 +400,5 @@ Use of SSH keys
 ---------------
 
 Using SSH keys with an SSH Agent can be used to make access to resources such as Urika more convenient.  Further information on how do is avialable in the 
-`Cirrus HPC service documentation <https://cirrus.readthedocs.io/en/latest/user-guide/connecting.html#making-access-more-convenient-using-a-ssh-agent>_`
+`Cirrus HPC service documentation <https://cirrus.readthedocs.io/en/latest/user-guide/connecting.html#making-access-more-convenient-using-a-ssh-agent>`_
   
