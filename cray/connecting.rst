@@ -354,20 +354,26 @@ Connect to Cray Urika using ssh
 Connect to Cray Urika from hydra-vpn.epcc.ed.ac.uk
 --------------------------------------------------
 
-Once you have logged in to hydra-vpn.epcc.ed.ac.uk, you can log into Cray Urika via the command-line as follows.
+Once you have logged in to hydra-vpn.epcc.ed.ac.uk, you can log into Cray Urika, by connecting to one of its login nodes, via the command-line, as follows.
 
 Either, enter::
 
-    ssh <your-urika-username>@172.24.40.11
+    ssh <your-urika-username>@u1
 
 Or, enter::
 
-    ssh <your-urika-username>@172.24.40.12
+    ssh <your-urika-username>@u2
 
 When prompted, enter the password for your **Urika** account.
 
 You will be presented with the Urika command line.
 
+**Note: Urika's login nodes**
+
+Urika has 2 login nodes:
+
+* ``urika1``: Alias: ``u1`` (as used above). IP address: 172.24.40.11.
+* ``urika2``: Alias: ``u2`` (as used above). IP address: 172.24.40.12.
 
 Tested platforms and tools
 --------------------------
