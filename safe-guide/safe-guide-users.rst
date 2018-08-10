@@ -201,6 +201,15 @@ This is machine-specific.
     - 'Confirm New Password' 
 5. Click 'Update Password'.   
 
+**Intel cluster within Secure Safe Haven**:
+
+1. At the command-line, run::
+
+    passwd
+
+2. You will be prompted to enter your old password.
+3. You will be prompted to enter your new password twice.
+
 User Mailing Options
 --------------------
 

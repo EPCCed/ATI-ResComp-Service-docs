@@ -95,6 +95,16 @@ You can change your Atiras password as follows:
     - 'Confirm New Password'
 4. Click 'Update Password'.  
 
+Change your Intel cluster password
+----------------------------------
+ 
+1. At the command-line, run:: 
+ 
+    passwd 
+ 
+2. You will be prompted to enter your old password. 
+3. You will be prompted to enter your new password twice. 
+
 Logout from Atiras
 ------------------
 
