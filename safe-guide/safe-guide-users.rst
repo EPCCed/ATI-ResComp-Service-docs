@@ -170,6 +170,8 @@ How to change a password on your machine account
 
 This is machine-specific.
 
+**Note:** When you change your password on machines in this way, the changes are NOT reflected on the SAFE, so please remember your new password.
+
 **hydra-vpn.epcc.ed.ac.uk gateway**:
 
 1. At the command-line, run::
@@ -188,7 +190,16 @@ This is machine-specific.
 2. You will be prompted to enter your new password twice.
 3. You will be prompted to enter your old password.
 
-**Note:** When you change your password on machines in this way, the changes are NOT reflected on the SAFE, so please remember your new password.
+**Atiras portal:**
+
+1. Go to the Atiras home page.
+2. Click the menu labelled by your username at the top-right of the page. 
+3. Select 'Settings'.   
+4. Fill in the following fields: 
+    - 'Current Password' 
+    - 'New Password' 
+    - 'Confirm New Password' 
+5. Click 'Update Password'.   
 
 User Mailing Options
 --------------------
