@@ -46,7 +46,7 @@ On subsequent sessions, you will see your recent connections e.g.
 Connect via SSH (secure shell) session
 --------------------------------------
 
-To connect to a virtual machine via an SSH session, double click on the ``-ssh`` connection for that virtual machine. This can be done under either 'ALL CONNECTIONS' or, for virtual machines to which you have connected before, under 'RECENT CONNECTIONS'.
+To connect to a virtual machine via an SSH session, right-click on the ``-ssh`` connection for that virtual machine and select "Open link in new tab". This can be done under either 'ALL CONNECTIONS' or, for virtual machines to which you have connected before, under 'RECENT CONNECTIONS'.
 
 You will be shown a command-line terminal with a login prompt e.g.
 
@@ -61,7 +61,7 @@ You will be presented with a bash prompt e.g.
 Connect via RDP (remote desktop) session
 ----------------------------------------
 
-To connect to a virtual machine via an RDP session, double click on the ``-rdp`` connection for that virtual machine. This can be done under either 'ALL CONNECTIONS' or, for virtual machines to which you have connected before, under 'RECENT CONNECTIONS'.
+To connect to a virtual machine via an RDP session, right-click on the ``-rdp`` connection for that virtual machine and select "Open link in new tab". This can be done under either 'ALL CONNECTIONS' or, for virtual machines to which you have connected before, under 'RECENT CONNECTIONS'.
 
 You will be shown a login dialog e.g.
 
