@@ -5,7 +5,7 @@ ATI Research Computing Service
   
 The ATI Research Computing Service is a data science platform hosted by EPCC for the Alan Turing Institute.
 
-This documentation is based on the `Cirrus Documentation <http://www.cirrus.ac.uk/docs/>`_ which itself draws on the `Sheffield Iceberg Documentation <https://www.sheffield.ac.uk/wrgrid/iceberg>`_and the documentation for the `ARCHER National Supercomputing Service <http://www.archer.ac.uk>`_.
+This documentation is based on the `Cirrus Documentation <http://www.cirrus.ac.uk/docs/>`_ which itself draws on the `Sheffield Iceberg Documentation <https://www.sheffield.ac.uk/wrgrid/iceberg>`_ and the documentation for the `ARCHER National Supercomputing Service <http://www.archer.ac.uk>`_.
 
 The ATI Research Computing Service currently consists of: 
 
