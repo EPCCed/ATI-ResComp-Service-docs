@@ -57,3 +57,5 @@ How the information you provide is used to administer your use of the services t
 
    intel/introduction
    intel/connecting
+   intel/using_build_arena
+   intel/using_secure_safe_haven
