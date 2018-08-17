@@ -45,7 +45,7 @@ Virtual machines allow outbound connections to hosts external to Atiras, to allo
 
 Once a virtual machine has been configured, it is deployed, by EPCC's Systems Development Team, into the Secure Safe Haven, where it becomes available as a virtual machine for a project's researchers. Depending on the project, a researcher developer may retain administrator rights on the deployed virtual machine to be able to make configuration changes and fixes for the project's researchers.
 
-Each virtual machine runs CentOS Linux release 7.5. They have a small core count, small RAM and limited virtual disk space, to allow for software assembly and testing only. Once deployed into the Secure Safe Haven the number of cores, RAM and disk space are extended.
+Each virtual machine runs CentOS Linux release 7.5. They are configured with 4 CPUs, 16GB memory and ~60GB disk space to allow for software assembly and testing. Once deployed into the Secure Safe Haven the number of cores, available RAM and disk space are extended.
 
 Requesting access to Atiras
 ---------------------------
