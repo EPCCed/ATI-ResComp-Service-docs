@@ -3,12 +3,9 @@
 ATI Research Computing Service
 ==============================
   
-The ATI Research Computing Service is a data science platform hosted by EPCC for the Alan Turing Institute.
+The ATI Research Computing Service are data science platforms hosted by EPCC for the Alan Turing Institute.
 
-This documentation is based on the `Cirrus Documentation <http://www.cirrus.ac.uk/docs/>`_ which itself draws on the `Sheffield Iceberg Documentation <https://www.sheffield.ac.uk/wrgrid/iceberg>`_
-and the documentation for the `ARCHER National Supercomputing Service <http://www.archer.ac.uk>`_.
-
-The ATI Research Computing Service currently consists of: 
+The ATI Research Computing Service consists of: 
 
 - a Helpdesk, run by EPCC.
 - a Cray Urika GX system. 
@@ -22,6 +19,9 @@ This documentation contains:
 How we collect, use and share information about your use of the service are explained in the  :doc:`helpdesk/personal-data-privacy-policy`.
 
 How the information you provide is used to administer your use of the services through the ATI SAFE helpdesk software is explained `here <https://safe.epcc.ed.ac.uk/ati/privacy_policy.jsp>`_.
+
+Contents
+--------
 
 .. toctree::
    :maxdepth: 2
@@ -48,3 +48,15 @@ How the information you provide is used to administer your use of the services t
    cray/introduction
    cray/connecting
    cray/data-transfer 
+
+Related services
+----------------
+
+As an alternative to using the ATI Research Computing Service, you may also want to consider `Cirrus <http://www.cirrus.ac.uk/>`_, an EPSRC Tier-2 National HPC Facility available for users in both academia and industry for computational, simulation, modelling, and data science challenges.
+
+`hpc-uk <http://www.hpc-uk.ac.uk/>`_ provides information about organisations across the UK, including EPCC, that offer access to HPC infrastructures and related services such as training.
+
+About this documentation
+------------------------
+
+This documentation is based on the `Cirrus Documentation <http://www.cirrus.ac.uk/docs/>`_ which itself draws on the `Sheffield Iceberg Documentation <https://www.sheffield.ac.uk/wrgrid/iceberg>`_ and the documentation for the `ARCHER National Supercomputing Service <http://www.archer.ac.uk>`_.
