@@ -52,11 +52,17 @@ Requesting access to Atiras
 
 This section explains how you request access to Atiras.
 
-You will need a user account for the Atiras portal.
+If you are a researcher wanting to access a virtual machine for your project within the Secure Safe Haven, you will need:
 
-If you are a researcher wanting to access a virtual machine for your project within the Secure Safe Haven, you will need an additional project-specific account for the Secure Safe Haven.
+#. An account for the Atiras portal to access the Secure Safe Haven.
+#. An account for a virtual machine in the Secure Safe Haven.
 
-If you are one of your project's researcher administrators or researcher developers wanting to access a virtual machine for your project within the build arena, you will need an additional project-specific account for the build arena.
+If you are one of your project's researcher administrators or researcher developers wanting to access a virtual machine for your project within the build arena, you will need:
+
+#. An account for the Atiras portal to access the build arena.
+#. An account for a virtual machine in the build arena.
+
+Note: if you are a research administrator or researcher developer wanting to access virtual machines both in the build arena and Secure Safe Haven then you will need all 4 accounts.
 
 You can request user accounts for each of these using your account on the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_.
 

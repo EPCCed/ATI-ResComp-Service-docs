@@ -192,7 +192,7 @@ This is machine-specific.
 
 **Atiras portal:**
 
-1. Go to the Atiras home page.
+1. Go to the Atiras portal home page.
 2. Click the menu labelled by your username at the top-right of the page. 
 3. Select 'Settings'.   
 4. Fill in the following fields: 
@@ -203,12 +203,26 @@ This is machine-specific.
 
 **Atiras Secure Safe Haven and build arena virtual machines**:
 
-1. At the command-line, run::
+If running a SSH (secure shell) session, or from terminal window in an RDP (remote desktop) session
 
-    passwd
+#. Run:: 
+ 
+    passwd 
+ 
+#. You will be prompted to enter your old password. 
+#. You will be prompted to enter your new password twice. 
 
-2. You will be prompted to enter your old password.
-3. You will be prompted to enter your new password twice.
+Alternatively, if running an RDP (remote desktop) session:
+
+#. Click the button icon on the top right hand side of the desktop.
+#. You will be presented with a dialog box. Click your user name then select 'Account Settings'.
+#. Click '<your-virtual-machine-username>' on the row of user names.
+#. Click the button (with five blobs) next to the 'Password' field.
+#. Fill in the following fields:
+    - 'Current Password'
+    - 'New Password'
+    - 'Verify New Password'
+#. Click 'Change'. 
 
 User Mailing Options
 --------------------
