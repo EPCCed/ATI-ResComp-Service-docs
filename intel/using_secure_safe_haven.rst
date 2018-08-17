@@ -10,6 +10,8 @@ See the chapter :doc:`connecting` for instructions on how to connect to a virtua
 Access project data
 -------------------
 
+Your project data will be available as NFS mounts on your virtual machine. These will be in the ``/mnt/`` directory.
+
 Submit a job to the Intel cluster
 ---------------------------------
 
