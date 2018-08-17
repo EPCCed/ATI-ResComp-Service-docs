@@ -8,8 +8,6 @@ This chapter contains information about the ATI service on the Cray Urika GX sys
 - the `Early Access Service`_
 - `Usage Restrictions`_
 - `Training Materials`_
-- `Software troubleshooting`_
-
 
 Where appropriate it contains links to Cray's documentation for the system.
 
@@ -70,8 +68,3 @@ Training Materials
 #. The slides from the Urika training course given by Cray in December 2017 are `available <https://cray.app.box.com/v/ati-training-dec-2017>`_.
 #. These slides provide an overview of the hardware, the software stack, use of applications (Hadoop, Spark, Cray Graph Engine, Jupyter Notebooks), resource management and case studies. 
 #. Cray have also provided slides explaining the various job submission mechanisms available on the Urika.  These are available on the Urika itself via a web browser configured to access Cray's application (see :doc:`connecting`).  In such a browser these slides are available at http://urika1.turing.ac.uk/static/documentation/notebooks/ATI-Job-Submission.pdf 
-
-Software troubleshooting
-------------------------
-
-#. Using Jupyter through the Urika web interface: when you first get your Urika account, you must first log in directly to the command line (see :doc:`connecting`).  This ensures that a home directory is created for you. If you do NOT do this then if you attempt to use Jupyter through the Urika web interface then after you enter your Urika username and password you will get the error  "500 : Internal Server Error".
