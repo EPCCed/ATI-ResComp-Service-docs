@@ -1,47 +1,79 @@
-Atiras, Intel cluster and Secure Safe Haven
+Atiras, Secure Safe Haven and Intel cluster
 ===========================================
 
-This chapter contains information about the Alan Turing Institute Remote Access Service (Atiras), Intel cluster and Secure Safe Haven. It explains:
+This chapter contains information about the Alan Turing Institute Remote Access Service (Atiras), a Secure Safe Haven with an Intel cluster. It explains:
 
-- `Hardware`_
-- `Requesting access to Atiras and the Intel cluster`_ 
+- `Key components`_
+- `Requesting access to Atiras`_ 
 - `Early Access Service`_
 - `Usage Restrictions`_
-..
-  - `Training Materials`_
-  - `Software troubleshooting`_
-..
 
-The chapter :doc:`connecting` explains how to connect to Atiras.
+Key components
+--------------
 
-Hardware
---------
+The **Alan Turing Institute Remote Access Service (Atiras)** provides a service for running computational and data analysis tasks upon project data held within a secure environment. Atiras consists of the following components.
 
-The Intel cluster within the Secure Safe Haven is a cluster of 32 Intel Xeon compute nodes. Each node has 2 CPUs, a 1 x Skylake Gold 6148F (Omnipath-enabled) CPU and 1 x Skylake Gold 6148 CPU. Each CPU has 20 physical cores, with hyperthreading this provides 40 virtual cores per CPU. The cluster, in total, has 1280 physical cores. Each node has 192GB of memory, 160GB of home storage, 1.5TB scratch storage and 5.5TB extra storage. 300TB of storage is shared across the cluster.
+**Atiras portal**
+
+The Atiras portal is a web browser-based remote desktop gateway by which researchers can access the Secure Safe Haven and build arena. It allows the use of virtual machines within Atiras via either a command-line terminal or a graphical desktop.
+
+**Secure Safe Haven**
+
+The Secure Safe Haven provides a project with virtual machines customised with software required by that project and connected to the project's data held within the Secure Safe Haven. These virtual machines allow the project's researchers to run computational and data analysis tasks, access the project's data held within the Secure Safe Haven, and submit jobs to the Intel cluster (these virtual machines also serve as login nodes for the Intel cluster).
+
+Virtual machines do not allow outbound or inbound connections to hosts external to the Secure Safe Haven.
+
+Each virtual machine runs CentOS Linux release 7.5.
+
+**Intel cluster**
+
+The Intel cluster, within the Secure Safe Haven, is a cluster of 32 Intel Xeon compute nodes. Each node has 2 CPUs, a 1 x Skylake Gold 6148F (Omnipath-enabled) CPU and 1 x Skylake Gold 6148 CPU. Each CPU has 20 physical cores, with hyperthreading this provides 40 virtual cores per CPU. The cluster, in total, has 1280 physical cores. Each node has 192GB of memory and 8TB of local storage. 300TB of storage is shared across the cluster via NGS. 33TB is shared via BeeGFS.
+
+Nodes do not allow outbound or inbound connections to hosts external to the Secure Safe Haven.
 
 Each node runs CentOS Linux release 7.5.
 
-Requesting access to Atiras and the Intel cluster
--------------------------------------------------
+**Project data areas**
 
-This section explains how you request access to both Atiras and the Intel cluster within the Secure Safe Haven.
+Each project has a data area in the Secure Safe Haven. These are available in fixed sizes, for example 10GB, 50GB, or 100GB. The size available to a project depends upon both the data a project wants to hold within the Secure Safe Haven and the data they expect to produce from their analyses.
+
+**Build arena**
+
+Complementing the Secure Safe Haven, but sitting outside of it, is the **build arena**. The build arena provides a project with project-specific virtual machines. A project's researcher administrators and researcher developers have administrator rights sufficient to install and configure the computational and data analysis environment required by their project's researchers.
+
+Virtual machines allow outbound connections to hosts external to Atiras, to allow for software to be downloaded and installed in the virtual machines.
+
+Once a virtual machine has been configured, it is deployed, by EPCC's Systems Development Team, into the Secure Safe Haven, where it becomes available as a virtual machine for a project's researchers. Depending on the project, a researcher developer may retain administrator rights on the deployed virtual machine to be able to make configuration changes and fixes for the project's researchers.
+
+Each virtual machine runs CentOS Linux release 7.5. They have a small core count, small RAM and limited virtual disk space, to allow for software assembly and testing only. Once deployed into the Secure Safe Haven the number of cores, RAM and disk space are extended.
+
+Requesting access to Atiras
+---------------------------
+
+This section explains how you request access to Atiras.
+
+You will need a user account for the Atiras portal.
+
+If you are a researcher wanting to access a virtual machine for your project within the Secure Safe Haven, you will need an additional project-specific account for the Secure Safe Haven.
+
+If you are one of your project's researcher administrators or researcher developers wanting to access a virtual machine for your project within the build arena, you will need an additional project-specific account for the build arena.
+
+You can request user accounts for each of these using your account on the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_.
+
+Instructions on getting an account for the ATI SAFE and using a *Project Code* to request access to the ATI's research computing resources are in the :doc:`../safe-guide/safe-guide-users` section of this User Guide.
+
+This *Project Code* entry can be obtained by contacting the ATI's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
+
+If your request for access is successful, you will receive emails from the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_ with the information for your user accounts for the Atiras portal, the Secure Safe Haven and the build arena.
 
 Access is via the `Atiras portal <https://secure.epcc.ed.ac.uk/ati/>`_
-
-You need user accounts on BOTH Atiras and the Intel cluster within the Secure Safe Haven. You can request user accounts for both of these using your account on the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_.
-
-Instructions on getting an account for the ATI SAFE and using a *Project Code* to request access to ATI research computing resources are in the :doc:`../safe-guide/safe-guide-users` section of this User Guide.
-
-For Atiras and the Intel cluster, this *Project Code* entry can be obtained by contacting the ATI Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
-
-If your request for access is successful, you will receive emails from the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_ with the information for your user account on both Atiras and the Intel cluster.
 
 Early Access Service 
 --------------------
 
-When Atiras and the Intel cluster within the Secure Safe Haven is initially made available to ATI researchers it will be run as an Early Access service. This purpose of this Early Access service will be to establish how best to later configure the service to meet ATI researcher needs. The Early Access Service will therefore be replaced at a later to be specified date.
+When Atiras is initially made available to the ATI's researchers it will be run as an Early Access service. This purpose of this Early Access service will be to establish how best to later configure the service to meet the ATI's researchers' needs. The Early Access service will therefore be replaced at a later to be specified date.
 
-This section explains how the Early Access service on Atiras and within the Secure Safe Haven operates.
+This section explains how the Early Access service on Atiras operates.
 
 #. There will be one ATI SAFE *Project Code* for the Early Access Service.
 #. This *Project Code* can be obtained by contacting the ATI Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
@@ -55,13 +87,3 @@ Usage Restrictions
 ------------------
 
 #. ATI users may not make any public presentation or publish any paper or report on the hardware or software or its performance without receiving prior express written consent from the ATI Research Computing Service Manager.
-
-..
-  Training Materials 
-  ------------------
-..
-
-..
-    Software troubleshooting
-    ------------------------
-..

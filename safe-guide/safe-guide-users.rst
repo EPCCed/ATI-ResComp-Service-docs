@@ -201,7 +201,7 @@ This is machine-specific.
     - 'Confirm New Password' 
 5. Click 'Update Password'.   
 
-**Intel cluster within Secure Safe Haven**:
+**Atiras Secure Safe Haven and build arena virtual machines**:
 
 1. At the command-line, run::
 

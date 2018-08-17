@@ -11,14 +11,14 @@ The ATI Research Computing Service currently consists of:
 
 - a Helpdesk, run by EPCC.
 - a Cray Urika GX system. 
-- an Intel cluster within a Secure Safe Haven, accessed via the Alan Turing Institute Remote Access service (Atiras).
+- the Alan Turing Institute Remote Access Service (Atiras), a Secure Safe Haven with an Intel cluster.
 
 This documentation contains:
 
 - :ref:`Helpdesk`: general information on how to contact the Helpdesk.
 - :ref:`ATISAFEDocumentation`: general information on how to use the ATI SAFE for helpdesk and support, managing user accounts and project research computing resources, and obtaining resource usage reports.
-- :ref:`CrayUrikaUserGuide`: general information on how to access and connect to the Cray Urika GX system. 
-- :ref:`AtirasIntelSecureSafeHaven`: general information on how to acces and connect to the Alan Turing Institute Remote Access Service (Atiras) and the Intel cluster within the Secure Safe Haven.
+- :ref:`CrayUrikaUserGuide`: general information on how to access, connect to and use the Cray Urika GX system. 
+- :ref:`AtirasSecureSafeHavenIntelUserGuide`: general information on how to access, connect to and use Atiras.
 
 How we collect, use and share information about your use of the service are explained in the  :doc:`helpdesk/personal-data-privacy-policy`.
 
@@ -52,8 +52,8 @@ How the information you provide is used to administer your use of the services t
 
 .. toctree::
    :maxdepth: 2
-   :caption: Atiras, Intel cluster and Secure Safe Haven User Guide
-   :name: AtirasIntelSecureSafeHaven
+   :caption: Atiras, Secure Safe Haven and Intel cluster User Guide
+   :name: AtirasSecureSafeHavenIntelUserGuide
 
    intel/introduction
    intel/connecting
