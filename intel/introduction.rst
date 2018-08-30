@@ -6,7 +6,6 @@ This chapter contains information about the Alan Turing Institute Remote Access 
 - `Key components`_
 - `Requesting access to Atiras`_ 
 - `Early Access Service`_
-- `Usage Restrictions`_
 
 Key components
 --------------
