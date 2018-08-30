@@ -38,7 +38,13 @@ The virtual machine supports a number of standard ways to get content - includin
 * Securely log into remote hosts:, ``ssh``
 * Interact with source code repositories: ``git``, ``svn``, ``cvs``
 
-The Mozilla Firefox web browser is also available.
+If using your virtual machine via RDP, then Mozilla Firefox web browser is also available:
+
+* Either, run::
+
+        firefox
+
+* Or, select Applications => Firefox
 
 Deploy a virtual machine into the Secure Safe Haven
 ---------------------------------------------------
