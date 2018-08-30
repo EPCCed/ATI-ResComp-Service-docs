@@ -88,8 +88,3 @@ This section explains how the Early Access service on Atiras operates.
 #. During the Early Access Service there is no procedure in place for resolving disagreements on resource usage and allocations.
 #. There is NO backup on any of the filesystems users have access to.
 #. There is NO disaster recovery.
-
-Usage Restrictions 
-------------------
-
-#. ATI users may not make any public presentation or publish any paper or report on the hardware or software or its performance without receiving prior express written consent from the ATI Research Computing Service Manager.
