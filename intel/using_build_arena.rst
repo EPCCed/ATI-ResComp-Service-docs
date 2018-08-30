@@ -56,3 +56,11 @@ Once you have configured the virtual machine with the software needed by the res
 #. SDT shuts down your virtual machine in the build arena.
 #. SDT copies your virtual machine into the Secure Safe Haven, connects it to your project's data area and starts it up. It is now available as a virtual machine for use by your project's researchers.
 #. SDT restarts the virtual machine in the build arena.
+
+Default text editors
+--------------------
+
+By default, each build arena virtual machine provides two text editors:
+
+* `ViM <https://www.vim.org/>`_: ``vi`` or ``vim``.
+* GNU `nano <https://www.nano-editor.org/>`_: ``nano``.
