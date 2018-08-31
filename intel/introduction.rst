@@ -26,7 +26,7 @@ Each virtual machine runs CentOS Linux release 7.5.
 
 **Intel cluster**
 
-The Intel cluster, within the Secure Safe Haven, is a cluster of 32 Intel Xeon compute nodes. Each node has 2 CPUs, a 1 x Skylake Gold 6148F (Omnipath-enabled) CPU and 1 x Skylake Gold 6148 CPU. Each CPU has 20 physical cores, with hyperthreading this provides 40 virtual cores per CPU. The cluster, in total, has 1280 physical cores. Each node has 192GB of memory and 8TB of local storage. 300TB of storage is shared across the cluster via NGS. 33TB is shared via BeeGFS.
+The Intel cluster, within the Secure Safe Haven, is a cluster of 32 Intel Xeon compute nodes. Each node has 2 CPUs, a 1 x Skylake Gold 6148F (Omnipath-enabled) CPU and 1 x Skylake Gold 6148 CPU. Each CPU has 20 physical cores, with hyperthreading this provides 40 virtual cores per CPU. The cluster, in total, has 1280 physical cores. Each node has 192GB of memory and 8TB of local storage. 300TB of storage is shared across the cluster via NFS. 33TB is shared via BeeGFS.
 
 Nodes do not allow outbound or inbound connections to hosts external to the Secure Safe Haven.
 
