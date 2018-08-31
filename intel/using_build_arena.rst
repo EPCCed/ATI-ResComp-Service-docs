@@ -1,11 +1,9 @@
 Using the build arena
 =====================
 
-This chapter explains how to use, and configure, a virtual machine for your project in the build arena of Atiras.
+This chapter explains how to use the virtual machine for your project in the build arena of Atiras to build a `Docker <https://www.docker.com/>`_ image with the computational and data analysis environment required by your project's researchers. 
 
-You will have been given administrator rights sufficient to install and configure the computational and data anaysis environment required by your project's researchers.
-
-The virtual machine will allow outbound connections to hosts external to Atiras, to allow for software to be downloaded and installed in the virtual machines.
+The virtual machine will allow outbound connections to hosts external to Atiras, to allow for software to be downloaded and installed on your virtual machine.
 
 The virtual machine runs CentOS Linux release 7.5.
 
@@ -46,16 +44,14 @@ If using your virtual machine via RDP, then Mozilla Firefox web browser is also 
 
 * Or, select Applications => Firefox
 
-Deploy a virtual machine into the Secure Safe Haven
----------------------------------------------------
+Deploy a Docker image into the Secure Safe Haven
+------------------------------------------------
 
-Once you have configured the virtual machine with the software needed by the researchers on your project it can be deployed within the Secure Safe Haven. The process is as follows:
+Once you have created and configured a Docker image with the software needed by the researchers on your project it can be deployed within the Secure Safe Haven. The process is as follows:
 
-#. Request that the virtual machine be deployed into the Secure Safe Haven.
-#. EPCC's Systems Development Team (SDT) audits your virtual machine in accordance with the required security standards of both your project and the Secure Safe Haven. If they have any concerns, suggestions, or requirements they will pass these back to you for you to act upon.
-#. SDT shuts down your virtual machine in the build arena.
-#. SDT copies your virtual machine into the Secure Safe Haven, connects it to your project's data area and starts it up. It is now available as a virtual machine for use by your project's researchers.
-#. SDT restarts the virtual machine in the build arena.
+#. Request that the Docker image be deployed into the Secure Safe Haven.
+#. EPCC's Systems Development Team (SDT) audits your Docker image in accordance with the required security standards of both your project and the Secure Safe Haven. If they have any concerns, suggestions, or requirements they will pass these back to you for you to act upon.
+#. SDT copies your Docker image into the Secure Safe Haven, connects it to your project's data area and starts it up. It is now available as a virtual machine for use by your project's researchers.
 
 Default text editors
 --------------------
