@@ -17,6 +17,8 @@ Key components
 
 The **Alan Turing Institute Remote Access Service (Atiras)** provides a service for running computational and data analysis tasks upon project data held within a secure environment. Atiras consists of the following components.
 
+.. image:: Atiras.png
+
 **Atiras portal**
 
 The Atiras portal is a web browser-based remote desktop gateway by which researchers can access the Secure Safe Haven and build arena. It allows the use of virtual machines within Atiras via either a command-line terminal or a graphical desktop.
