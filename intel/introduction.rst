@@ -7,6 +7,11 @@ This chapter contains information about the Alan Turing Institute Remote Access 
 - `Requesting access to Atiras`_ 
 - `Early Access Service`_
 
+Important note
+--------------
+
+**Atiras is under development. As a consequence, aspects of its design, behaviour and usage are liable to change.**
+
 Key components
 --------------
 
