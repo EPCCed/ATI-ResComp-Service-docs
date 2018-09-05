@@ -19,6 +19,17 @@ The Secure Safe Haven uses the `Slurm workload manager <https://slurm.schedmd.co
 
 You can submit jobs to the Intel cluster using the ``qsub`` command.
 
+Data security within the Intel cluster
+--------------------------------------
+
+**These are planned**
+
+Local disks on compute nodes are purged at the end of each run.
+
+File permissions on ``/tmp`` directories are such that other projects won't be able to access any temporary data that has been deposited there by you. Furthermore, the contents of ``/tmp`` are deleted on a regular basis to avoid project-specific data inadvertently being left there.
+
+The job scheduler is configured so that two projects never share the same compute node at the same time.
+
 Troubleshooting: no internet connections
 ----------------------------------------
 
