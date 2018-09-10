@@ -7,10 +7,17 @@ This chapter contains information about the Alan Turing Institute Remote Access 
 - `Requesting access to Atiras`_ 
 - `Early Access Service`_
 
+Important note
+--------------
+
+**Atiras is under development. As a consequence, aspects of its design, behaviour and usage are liable to change.**
+
 Key components
 --------------
 
 The **Alan Turing Institute Remote Access Service (Atiras)** provides a service for running computational and data analysis tasks upon project data held within a secure environment. Atiras consists of the following components.
+
+.. image:: Atiras.png
 
 **Atiras portal**
 
@@ -28,6 +35,8 @@ Each virtual machine runs CentOS Linux release 7.5.
 
 The Intel cluster, within the Secure Safe Haven, is a cluster of 32 Intel Xeon compute nodes. Each node has 2 CPUs, a 1 x Skylake Gold 6148F (Omnipath-enabled) CPU and 1 x Skylake Gold 6148 CPU. Each CPU has 20 physical cores, with hyperthreading this provides 40 virtual cores per CPU. The cluster, in total, has 1280 physical cores. Each node has 192GB of memory and 8TB of local storage. 300TB of storage is shared across the cluster via NFS. 33TB is shared via BeeGFS.
 
+If a project-specific `Docker <https://www.docker.com/>`_ image has been developed for the project (see below) then this will be deployed upon nodes within the Intel cluster when the project's researchers submit jobs to the cluster.
+
 Nodes do not allow outbound or inbound connections to hosts external to the Secure Safe Haven.
 
 Each node runs CentOS Linux release 7.5.
@@ -38,11 +47,15 @@ Each project has a data area in the Secure Safe Haven. These are available in fi
 
 **Build arena**
 
-Complementing the Secure Safe Haven, but sitting outside of it, is the **build arena**. The build arena provides a project with a project-specific virtual machine. The project's researcher administrators and researcher developers can use their virtual machine to build a `Docker <https://www.docker.com/>`_ image with the computational and data analysis environment required by their project's researchers.
+Complementing the Secure Safe Haven, but sitting outside of it, is the **build arena**. The build arena provides a project with a project-specific virtual machine. The project's researcher administrators and researcher developers have administrator rights sufficient to install and configure the computational and data analysis environment required by their project's researchers.
 
-To assist this, the project's researcher administrators and researcher developers have administrator rights within their project's virtual machine. The virtual machines allow outbound connections to hosts external to Atiras, to allow for software to be downloaded and installed in their virtual machine, and their Docker image constructed.
+This virtual machine also allows researcher administrators and researcher developers to build a `Docker <https://www.docker.com/>`_ image. This Docker image can contain a computational and data analysis environment which can be deployed upon nodes within the Intel cluster when the project's researchers submit jobs to the cluster.
 
-Once a Docker image has been configured, it is deployed, by EPCC's Systems Development Team, into the Secure Safe Haven, where it becomes available as a virtual machine for a project's researchers. Depending on the project, a researcher developer may retain administrator rights on the deployed virtual machine to be able to make configuration changes and fixes for the project's researchers.
+Once a virtual machine has been configured, it is deployed, by EPCC's Systems Development Team, into the Secure Safe Haven, where it becomes available as a virtual machine for a project's researchers. Depending on the project, a researcher developer may retain administrator rights on the deployed virtual machine to be able to make configuration changes and fixes for the project's researchers.
+
+If a Docker image has been prepared, then it, too, is deployed into the Secure Safe Haven, so that it can be deployed upon nodes within the Intel cluster when a project's researchers submit jobs.
+
+The virtual machine allow outbound connections to hosts external to Atiras, to allow for software to be downloaded and installed in their virtual machine, and their Docker image constructed.
 
 Each virtual machine runs CentOS Linux release 7.5. They are configured with 4 CPUs, 16GB memory and ~60GB disk space to allow for software assembly and testing. Once deployed into the Secure Safe Haven the number of cores, available RAM and disk space are extended.
 
