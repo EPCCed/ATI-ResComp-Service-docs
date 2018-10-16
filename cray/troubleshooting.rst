@@ -1,10 +1,10 @@
 Troubleshooting
 ===============
 
-Jupyter through the Urika web interface gives "500 : Internal Server Error"
----------------------------------------------------------------------------
+Jupyter through Urika's web interface gives "500 : Internal Server Error"
+-------------------------------------------------------------------------
 
-You might find that if you use Jupyter through the Urika web interface that after you enter your Urika username and password you get the error "500 : Internal Server Error".
+You might find that if you use Jupyter through Urika's web interface that after you enter your Urika username and password you get the error "500 : Internal Server Error".
 
 This can be caused by you not having a home directory. This, in turn, can occur if you try to use Jupyter without having at least one time logged into Urika using the command-line. Your home directory is created the first time you log into Urika using the command-line.
 

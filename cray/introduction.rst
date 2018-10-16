@@ -1,70 +1,71 @@
-Cray Urika GX
-=============
+Alan Turing Institute Cray Urika-GX Service
+===========================================
 
-This chapter contains information about the ATI service on the Cray Urika GX system. It explains:
+This chapter contains information about the Turing's Cray Urika-GX service ("Urika"). It explains:
 
-- the `Hardware`_
-- `Requesting access to the ATI Cray Urika GX system`_ 
-- the `Early Access Service`_
-- `Usage Restrictions`_
-- `Training Materials`_
+- Cray Urika-GX :ref:`hardware`.
+- :ref:`access`.
+- :ref:`early_access`.
+- :ref:`restrictions`.
+- :ref:`training`.
 
-Where appropriate it contains links to Cray's documentation for the system.
+Where appropriate it contains links to Cray's documentation for the Cray Urika-GX system.
 
-The chapter :doc:`connecting` explains how to connect to the ATI service on the Cray Urika GX system.
+:doc:`connecting` explains how to connect to the Turing's Cray Urika-GX service.
+
+.. _hardware:
 
 Hardware
 --------
 
-The Cray Urika GX system consists of 12 compute nodes (each 2x18 core Broadwell CPU)
-with 256GB of memory and 60TB of storage. For more details of the Urika system,
-see the `Cray website <http://www.cray.com/products/analytics/urika-gx>`_.
+The Turing's Cray Urika-GX service consists of 12 compute nodes (each 2x18 core Broadwell CPU) with 256GB of memory and 60TB of storage.
 
-Requesting access to the ATI Cray Urika GX system 
--------------------------------------------------
+For a detailed description of the Cray Urika-GX platform, see the `Cray website <http://www.cray.com/products/analytics/urika-gx>`_.
 
-This section explains how you request access to the ATI service on the Cray Urika GX system. 
+.. _access:
 
-Access to the Cray Urika GX system is by SSH via hydra-vpn.epcc.ed.ac.uk. You therefore 
-need user accounts on BOTH the Cray Urika and hydra-vpn.epcc.ed.ac.uk. You can request user accounts for both of these using your account on the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_.
+Requesting access to Urika
+--------------------------
 
-Instructions on getting an account for the ATI SAFE and using a *Project Code* to request 
-access to ATI research computing resources such as the Urika are in the 
-:doc:`../safe-guide/safe-guide-users` section of this User Guide.
+This section explains how you request access to Urika.
 
-For the Urika Early Access service, this *Project Code* entry can be obtained 
-by contacting the ATI Research Computing Service Manager via an email to 
-research-computing-support@turing.ac.uk.  
+Access to Urika is by SSH via hydra-vpn.epcc.ed.ac.uk. You therefore need user accounts on BOTH Urika and hydra-vpn.epcc.ed.ac.uk. You can request user accounts for both of these using your account on the Turing's `SAFE <https://safe.epcc.ed.ac.uk/ati>`_.
 
-If your request for access to the Urika is successful, you will receive emails from the 
-`ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_ with the information for your user account on
-the Urika and, if you do not already have one, information for your user account on the hydra-vpn.epcc.ed.ac.uk machine.
+Instructions on getting an account for the Turing's SAFE and using a *Project Code* to request access to Turing's research computing resources, including Urika, are in the :doc:`../safe-guide/safe-guide-users` section of this User Guide.
+
+For Urika's Early Access Service, this *Project Code* entry can be obtained by contacting the Turing's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.  
+
+If your request for access to Urika is successful, you will receive emails from the Turing's `SAFE <https://safe.epcc.ed.ac.uk/ati>`_ with the information for your user account on Urika and, if you do not already have one, information for your user account on hydra-vpn.epcc.ed.ac.uk.
+
+.. _early_access:
 
 Early Access Service 
 --------------------
 
-When the Cray Urika GX system is initially made available to ATI researchers it will be run as an Early Access service. This purpose of this Early Access service will be to establish how best to later configure the service to meet ATI researcher needs. The Early Access Service will therefore be replaced at a later to be specified date.
+Urika is currently being run for the Turing's researchers as an Early Access Service. This purpose of this Early Access Service is to establish how best to later configure the service to meet the needs of the Turing's researchers. The Early Access Service will be replaced at a future date.
 
-This section explains how the Early Access service on the Cray Urika GX system operates.
+This section explains how Urika's Early Access Service operates:
 
-#. There will be one ATI SAFE *Project Code* for the Early Access Service.
-#. This *Project Code* can be obtained by contacting the ATI Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
-#. During the Early Access Service there are no limitations on user disk quotas.
-#. There is no batch queuing software on the system. A job will only execute if there are resources available. If sufficient resources are not available then the user will have to try and submit later. 
-#. During the Early Access Service there is no procedure in place for resolving disagreements on resource usage and allocations.
+#. There is one SAFE *Project Code* for the Early Access Service.
+#. This *Project Code* can be obtained by contacting the Turing's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
+#. There are no limitations on user disk quotas.
+#. There is no batch queuing software provided. A job will only execute if there are resources available. If sufficient resources are not available then the user will have to try and submit later.
+#. There is no procedure in place for resolving disagreements on resource usage and allocations.
 #. There is NO backup on any of the 3 filesystems users have access to.
 #. There is NO disaster recovery.
 
+.. _restrictions:
 
 Usage Restrictions 
 ------------------
 
-#. ATI Cray GX system users may not make any public presentation or publish any paper or report on the Equipment or its performance without receiving prior express written consent from Cray. ATI users must provide any results from work on the system and methodology as to how the Results were obtained to Cray. Cray is allowed to use such results used in marketing collateral; press releases, white papers, etc. Cray may share Results with Intel.  
-#. ATI users may therefore not make any public presentation or publish any paper or report on the Urika GX hardware or software or its performance without receiving prior express written consent from the ATI Research Computing Service Manager
+#. Urika users must not make any public presentation or publish any paper or report on the Cray Urika-GX service, its hardware, software, or its performance without receiving prior express written consent from Cray. Users must provide any results from work on the Cray Urika-GX service, and the methodology as to how the results were obtained, to Cray. Cray is allowed to use such results used in marketing collateral; press releases, white papers, etc. Cray may share these results with Intel.  
+#. Urika users must therefore not make any public presentation or publish any paper or report on the Cray Urika-GX service, its hardware or software or its performance without receiving prior express written consent from the Turing's Research Computing Service Manager
+
+.. _training:
 
 Training Materials 
 ------------------
 
-#. The slides from the Urika training course given by Cray in December 2017 are `available <https://cray.app.box.com/v/ati-training-dec-2017>`_.
-#. These slides provide an overview of the hardware, the software stack, use of applications (Hadoop, Spark, Cray Graph Engine, Jupyter Notebooks), resource management and case studies. 
-#. Cray have also provided slides explaining the various job submission mechanisms available on the Urika.  These are available on the Urika itself via a web browser configured to access Cray's application (see :doc:`connecting`).  In such a browser these slides are available at http://urika1.turing.ac.uk/static/documentation/notebooks/ATI-Job-Submission.pdf 
+#. `Cray Urika-GX training course slides <https://cray.app.box.com/v/ati-training-dec-2017>`_, Cray, December 2017. An overview of the hardware, the software stack, use of applications (including Hadoop, Spark, Cray Graph Engine, Jupyter Notebooks), resource management and case studies. 
+#. `Job submission <http://urika1.turing.ac.uk/static/documentation/notebooks/ATI-Job-Submission.pdf>`_, Cray. Slides explaining tvarious job submission mechanisms available on Urika. Note: these are only available on Urika itself via a web browser configured to access Urika (see :doc:`connecting`). 

@@ -2,7 +2,7 @@ Project Leaders
 ===============
 
 Project Leaders can manage the resources and users associated with 
-their projects through the ATI SAFE.
+their projects through the Turing's SAFE.
 
 Getting Started
 ---------------
@@ -13,25 +13,24 @@ Your allocation has been set up as a project on the service. Your first steps.
 Here are some of the things you should consider doing; not all of them
 will be needed for every project.
 
-#. `Change your own SAFE password <safe-guide-users.html#chpass>`__
-#. `Set up an account on the service machine for yourself <#selfac>`__
-#. `Make sure other project users get registered <#regusers>`__
-#. `Designate one or more users as managers of your
-   project <#projman>`__
-#. `Decide whether you need project groups within your project, in order
-   to administer time and other resources <#projgrp>`__
+#. `Change your SAFE password <safe-guide-users.html#change-passwd>`_.
+#. :ref:`get-machine-account`.
+#. :ref:`register-project-users`.
+#. :ref:`assign-manager`.
+#. Decide whether to :ref:`setup-groups`, in order to administer time
+   and other resources. 
 
-.. _selfac:  
+.. _get-machine-account:  
  
-How to get your own account on the service machine
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Get your own account on the Research Computing Service machine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are not going to work on the machine yourself, you do not need to
-do this. You can administer your project through SAFE alone. But if you
-want a service machine account:
+If you are not going to work on the machine yourself, you do not need
+to do this. You can administer your project through SAFE alone. But if
+you want a service machine account:
 
 #. `Login to SAFE <safe-guide-users.html#login>`__.
-#. Go to the Menu *Login accounts* and select *Request login account*
+#. Go to the menu *Login accounts* and select *Request login account*
    button.
 #. Select the desired project from the pull down list and click *Select
    Project*
@@ -39,16 +38,17 @@ want a service machine account:
    Machine*
 #. Enter your Requested username and click on *Request*
 
-You will get an acknowledgment screen, from which you can return to your
-main page. Now (as a project leader) you have to accept your own request for an
-account — see below.
+You will get an acknowledgment screen, from which you can return to
+your main page. Now (as a project leader) you have to accept your own
+request for an account — see below.
 
-How can I check project alerts?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _check-alerts:
 
-`Login to SAFE <safe-guide-users.html#login>`__. Then:
+Check project alerts
+~~~~~~~~~~~~~~~~~~~~
 
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects managed* and select the *project* you wish
    to check
 #. This will display a page with a variety of options for managing your
    project.
@@ -63,10 +63,10 @@ How can I check project alerts?
 
 Do not forget the last step, or nothing will happen.
 
-| 
-
 Managing your allocated resources
 ---------------------------------
+
+.. _period-allocation:
 
 What is "period allocation"?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,9 +79,8 @@ kAUs will automatically expire.
 
 You can view and manage your period allocation via SAFE.
 
-`Login to SAFE <safe-guide-users.html#login>`__. Then:
-
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects managed* and select the *project* you wish
    to work with
 #. This will display a screen with a variety of options for managing the
    project.
@@ -91,7 +90,8 @@ You can view and manage your period allocation via SAFE.
 You will then see the details of your allocation. *Please check them
 carefully to make sure you are looking at the correct one.*
 
--  **Resource Pool (machine)**. "ATI" refers to the ATI Service.
+-  **Resource Pool (machine)**. "ATI" refers to the Turing's Research
+   Computing Service.
 -  **Amount of kAUs**
 -  **Dates** It is possible to have multiple successive period
    allocations, but they can never overlap if they are for the same
@@ -101,23 +101,26 @@ carefully to make sure you are looking at the correct one.*
    on the ">>>" (next period) and "<<<" (previous) buttons at the bottom
    of the page.
 
-You can manage the allocation by `setting up project
-groups <#projgrp>`__ and `allocating kAUs to project
-groups <#mvtime>`__. Project management tasks for the period allocation
-can be carried out at any time, but the allocation will be active, i.e.
-usable, only between the specified dates. Thus, you can set up project
-groups in advance.
+To manage the allocation, see:
 
-.. _projgrp:
+- :ref:`setup-groups`
+- :ref:`manage-time`.
 
-How can I set up project groups within my project?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Project management tasks for the period allocation can be carried out
+at any time, but the allocation will be active, i.e. usable, only
+between the specified dates. Thus, you can set up project groups in
+advance.
+
+.. _setup-groups:
+
+Set up project groups within your project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Project groups can be used to administer time and other resources within
 your project.
 
 #. `Login to SAFE <safe-guide-users.html#login>`__.
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. Go to the menu *Projects managed* and select the *project* you wish
    to create the group
 #. This will display a screen with a variety of options for managing the
    project.
@@ -133,15 +136,18 @@ your project.
 
 Single user accounts can only belong to one project group.
 
-How can I delete a project group?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _delete_group:
+
+Delete a project group
+~~~~~~~~~~~~~~~~~~~~~~
 
 You can only delete a project group if it has no resources or members.
-You must remove all its `members <#remu>`__ and all its
-`time <#mvtime>`__. Also, if it has `disk quotas set <#space>`__, it
-cannot be deleted; they will have to be removed first. Then:
+You must remove all its members (see :ref:`remove-group-user`)
+and all its time (See :ref:`move-time`). Also, if it has disk quotas
+set (see :ref:`manage-disk-space`), it cannot be deleted; they will
+have to be removed first. Then:
 
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. Go to the menu *Projects managed* and select the *project* you wish
    to delete the sub-group from.
 #. Click on *Project Group Administration*
 #. Select the project sub-group you want to delete. You will only be
@@ -152,10 +158,10 @@ cannot be deleted; they will have to be removed first. Then:
 Deleting a group involves removing its various directories. A human has
 to do this, so there will be a short delay.
 
-.. _time:
+.. _manage-time:
 
-How can I administer time within my project?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Manage time within your project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Time is measured in *allocation units* (kAUs), and is
 held in *budgets*. Every project group has its own budget. There are
@@ -173,13 +179,12 @@ Initially, all your time is in the general group's budget. If you are
 happy with all your users using the same budget, you can leave things as
 they are.
 
-If you wish to divide the time up between groups, you can `create a
-project group <#projgrp>`__ for each group. In this case you will
-probably want to move all the time out the general group, since this can
-be used by everyone.
+If you wish to divide the time up between groups, you can
+:ref:`setup-groups`. In this case you will probably want to move all
+the time out the general group, since this can be used by everyone.
 
-You may wish to `give time just to a single user <#oneuser>`__. This is
-a special case of a project group: one with only one member.
+You may wish to :ref:`allocate-time-single-user`. This is a special
+case of a project group: one with only one member.
 
 The reserve budget is provided so that if you wish you can control the
 use of time by your project members: you can keep most of the time in
@@ -187,14 +192,13 @@ your reserve budget, and move it to the other budgets as required. We
 recommend that you should do this, even if you don't need to create
 other project groups.
 
-.. _mvtime:
+.. _move-time:
 
-How can I move time between budgets?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Move time between budgets
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Login to SAFE <safe-guide-users.html#login>`__, and then:
-
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects managed* and select the *project* you wish
    to work with. This displays a panel with information for the project.
 #. Click *Manage Project Resources*
 #. Click *Manage Group Time Allocations for ATI*
@@ -205,35 +209,35 @@ How can I move time between budgets?
 
 Do not forget the last step, or nothing will happen.
 
-.. _oneuser:
+.. _allocate-time-single-user:
 
-How can I allocate time to a single user?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Allocate time to a single user
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As all the time in a project group is shared by all its members, the
 only way to reserve some time for a single user is to create a project
 group for that user alone.
 
-#. `Create a new project group <#projgrp>`__ for the user. For example,
-   if we are in project *t01* and the user is *fred*, you might call the
-   new project group *t01-fred*
-#. `Add the user to the new project group <#addu>`__
-#. `Move the time <#mvtime>`__ you wish the user to have into the new
-   project group
+#. Create a group for the user (see :ref:`setup-groups`). For example,
+   if we are in project *t01* and the user is *fred*, you might call
+   the new project group *t01-fred* 
+#. Add the user to the group (see :ref:`add-group-user`).
+#. :ref:`move-time` into the new project group so that the user has
+   the time you want them to have.
 
 Remember that time in the general group's budget is accessible to all,
 so you will probably want to move all of the project's time away from
 there.
 
-.. _space:
+.. _manage-disk-space:
 
-How can I administer disk space?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Manage disk space
+~~~~~~~~~~~~~~~~~
 
-Start by reading the discussion of the `administration of
-time <#time>`__, as the administration of disk space is related to this,
-and is also done using project groups. The two project groups which
-exist in each project can also be used for administering space.
+Start by reading about how to :ref:`manage-time` as the administration
+of disk space is related to this, and is also done using project
+groups. The two project groups which exist in each project can also be
+used for administering space.
 
 -  The *general group*, which has the same code as the project itself,
    includes every member of the project. The disk quotas of this project
@@ -248,9 +252,10 @@ overall limit for each of these. Within that limit, every portion of
 space must belong to one or other of the project group quotas. Thus, to
 start with, all the homespace (for example) allocated to a project is
 either in the general homespace quota or the reserve homespace quota.
-Space never belongs to more than one group quota. [The reserve quota is
-not a real quota, in fact. It has no existence on the service
-machine—just in the database.]
+Space never belongs to more than one group quota.
+
+**Note**: The reserve quota is not a real quota, in fact. It has no
+existence on the service machine — just in the database.
 
 Beyond the general and reserve quotas, you can also have quotas for the
 project groups which you create. But this is not compulsory. If you're
@@ -276,7 +281,7 @@ this project group, he will have a directory ``/home/t01/t01-a/john/`` .
 Any files he creates under that directory will belong to *t01-a* and
 will be counted against its quota.
 
-Of course, *john* is still a member of the general project group, so he
+*john* is still a member of the general project group, so he
 can still create files there. If he belongs to other project groups
 which have quotas, he'll have directories for these as well. He can only
 create files in the project groups he is a member of, since he can't
@@ -287,27 +292,31 @@ to the right project groups.
 You should also note that once you have instituted project group quotas,
 there's no easy way back. Removing them and reassigning all the files to
 other groups is a complex job and will require special arrangement with
-the system team—send a request to the
-`ATI Research Computing helpdesk <mailto:research-computing-support@turing.ac.uk>`__ if you need to do this.
+the system team — send a request to the Turing's Research Computing
+Service `helpdesk <mailto:research-computing-support@turing.ac.uk>`__
+if you need to do this.
 
 Most projects in fact use their project groups only for administering
 time, and allow their users to have access to all their space. You could
-if you wish make use of `user quotas <#persquota>`__ to stop individual
-users from taking too much space.
+if you wish make use of user quotas (see :ref:`create-quota-move-space`)
+to stop individual users from taking too much space.
 
-[Note that the above points do not apply to the reserve quotas, since
+**Note**: the above points do not apply to the reserve quotas, since
 they don't exist on the service machine. They're just a book-keeping
 fiction, and using them is cost free. We recommend this to any project
-which is concerned about running out of space.]
+which is concerned about running out of space.
 
-How can I create a quota for a project group, or move space between quotas?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _create-quota-move-space:
 
-First, read the `discussion of space administration <#space>`__. If you
-are still determined to use project group quotas, this is how.
+Create a quota for a project group, or move space between quotas
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Start by reading about how to :ref:`manage-disk-space` as the
+administration of disk space is related to this. If you are still
+determined to use project group quotas, this is how.
 
 #. `Login to SAFE <safe-guide-users.html#login>`__
-#. Go to the Menu *Projects manaaged* and select the *project* you wish
+#. Go to the menu *Projects manaaged* and select the *project* you wish
    to work on. This will display a panel with the project information.
 #. Click *Manage Project Resources*
 #. In the *Group Quotas* section, click on *Archive*, *Home* or *Work*
@@ -323,7 +332,7 @@ are still determined to use project group quotas, this is how.
 Do not forget the final step, or nothing will happen. The act of moving
 quota space to a project group which has no quota set converts that
 project group to one with a group quota, administered by a Unix group,
-as discussed `earlier <#space>`__.
+as discussed in :ref:`manage-disk-space` above.
 
 Quota changes are actually carried out by a human being. Once this has
 been done, you will receive an email informing you. If you ask for the
@@ -331,10 +340,10 @@ quota to be reduced below the current size of the files in the project
 group, the human will reject your request, and you will get an email
 saying this.
 
-.. _persquota:
+.. _set-individual-quota:
 
-How can I set a quota for an individual user?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Set a quota for an individual user
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 User disk quotas are completely separate from project group quotas. A
 user quota simply places a limit on the amount of space which a
@@ -343,7 +352,7 @@ stop you setting user quotas which add up to more (or less) than the
 total space. To set a quota for a user or users:
 
 #. `Login to SAFE <safe-guide-users.html#login>`__
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. Go to the menu *Projects managed* and select the *project* you wish
    to work on. This will display a panel with the project information.
 #. Click *Manage Project Resources*
 #. In the *User Quotas* section, click *Home* or *Work*
@@ -357,35 +366,35 @@ have finished, you will receive an email.
 As with group quotas on the work file-system you can only be absolutely
 sure of writing data when you are more than 7Gb below your quota limit.
 
-| 
-
 Managing Project Users
 ----------------------
 
-.. _regusers:
+.. _register-project-users:
 
-How can project users get registered?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Register project users
+~~~~~~~~~~~~~~~~~~~~~~
 
 You must not apply for machine accounts on behalf of other users, or let
 others use accounts that belong to you. Account sharing is strictly
-forbidden on the ATI Service. Every user must `register on
-SAFE <safe-guide-users.html#register>`__ and then `apply for their own
-machine account <safe-guide-users.html#getac>`__
+forbidden on the Alan Turing Institute Research Computing Service. Every
+user must `register on SAFE <safe-guide-users.html#register>`__ and
+then `request an account for the Research Computing Service machine
+<safe-guide-users.html#request-machine-account>`__
 
 In order to get an account, a potential user needs to know your project
 code. This is included in the email which SAFE sends to you, as PI, when
 your project is set up.
 
 #. Give the users the project code.
-#. Every user must `register on SAFE <safe-guide-users.html#register>`__
-   and then `apply for their own machine
-   account <safe-guide-users.html#getac>`__
-#. If you notice that the Menu *Projects managed* is highlighted orange,
+#. Request that every `register on SAFE
+   <safe-guide-users.html#register>`__ and then `request an account
+   for the Research Computing Service machine
+   <safe-guide-users.html#request-machine-account>`__
+#. If you notice that the menu *Projects managed* is highlighted orange,
    then this indicates that there is a request for project membership.
-   Now you have to accept (or reject) each user's request. `Login to
-   SAFE <safe-guide-users.html#login>`__.
-#. Go to the Menu *Projects managed* and select *project requests* and
+   Now you have to accept (or reject) each user's request. 
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects managed* and select *project requests* and
    you will see the details of the user who has applied.
 #. Click the button next to the user
 #. You will see the user's details, and at the bottom of the page
@@ -400,15 +409,16 @@ well: it's your responsibility to make sure this is right.
 When you accept a user, the systems team is automatically requested to
 create the account on the service machine. When this has been done, the
 user is emailed; allow a working day for this. The user can then login
-to SAFE and `pick up their password on the service
-machine <safe-guide-users.html#getpass>`__.
+to SAFE and `get their password for the service
+machine <safe-guide-users.html#get-machine-passwd>`__.
 
-How to track user sign up requests
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. track_signups:
 
-`Login to SAFE <safe-guide-users.html#login>`__. Then:
+Track user sign up requests
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects managed* and select the *project* you wish
    to affect.
 #. Click the *Update* button.
 #. Enter your email address in the *New Account Signup Notification
@@ -417,10 +427,10 @@ How to track user sign up requests
 
 Do not forget the last step, or nothing will happen.
 
-.. _projman:
+.. _assign-manager:
 
-How can I designate a user as a project manager?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Designate a user as a project manager
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A project manager can do everything in a project that a PI can do,
 except designate another project manager. You can designate as many
@@ -428,7 +438,7 @@ project managers as you wish.
 
 #. Make sure the user has an account in your project.
 #. `Login to SAFE <safe-guide-users.html#login>`__.
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. Go to the menu *Projects managed* and select the *project* you wish
    to appoint a project manager for. This will display a screen with a
    variety of options for managing the project.
 #. Click *Add project manager*
@@ -439,8 +449,10 @@ project managers as you wish.
 If you later wish to remove a project manager, click *Remove project
 manager*, select the *project manager* and then click *Remove*.
 
-How can I designate a user as a project sub-group manager?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _assign-sub-manager:
+
+Designate a user as a project sub-group manager
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A project sub-group manager can only move time and disk quota between
 the groups they manage. They can also create new sub-groups underneath
@@ -450,7 +462,7 @@ project and run reports on the project.
 
 #. Make sure the user has an account in your project.
 #. `Login to SAFE <safe-guide-users.html#login>`__.
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. Go to the menu *Projects managed* and select the *project* you wish
    to appoint a project sub-group manager for.
 #. Scroll down to project groups and click on *Project Group
    Administration*.
@@ -463,14 +475,13 @@ project and run reports on the project.
 To add users to the new project group, see the next question. A user can
 belong to more than one project group.
 
-.. _addu:
+.. _add-group-user:
 
-How can I add users to an existing project group?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add users to an existing project group
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Login to SAFE <safe-guide-users.html#login>`__. Then:
-
-#. Go to the Menu *Projects Managed *and select the *project* you wish
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects Managed *and select the *project* you wish
    to are work on. This will display a screen with a variety of options
    for managing the project.**
 #. Click on *Project Group Administration*
@@ -484,20 +495,19 @@ How can I add users to an existing project group?
 To see which members have access to the project group, select *project
 sub-group* and click *List Members.*
 
-If the project group is using `disk quotas <#space>`__, this operation
-is carried out by a human, so there may be a short delay. Otherwise, it
-happens at once.
+If the project group is using disk quotas (see
+:ref:`manage-disk-space`), this operation is carried out by a human,
+so there may be a short delay. Otherwise, it happens at once.
 
 A user can belong to more than one project group.
 
-.. _remu:
+.. _remove-group-user:
 
-How can I remove a user from a project group?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Remove a user from a project group
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Login to SAFE <safe-guide-users.html#login>`__. Then:
-
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects managed* and select the *project* you wish
    to work on. This will display a screen with a variety of options for
    managing the project.
 #. Click on *Project Group Administration*
@@ -509,9 +519,11 @@ How can I remove a user from a project group?
 To see the membership of a group, select *project group* and then click
 *List members* which shows the list of current members.
 
-If the project group is using `disk quotas <#space>`__, this operation
-is carried out by a human, so there may be a short delay. Otherwise, it
-happens at once.
+If the project group is using disk quotas (see
+:ref:`manage-disk-space`), this operation is carried out by a human,
+so there may be a short delay. Otherwise, it happens at once.
+
+.. _deactivate-user:
 
 Can I temporarily stop a user from using any time in my project?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -522,7 +534,7 @@ do any work, in effect, so we recommend that you use this facility with
 care.
 
 #. `Login to SAFE <safe-guide-users.html#login>`__
-#. Go to the Menu *Projects managed* and select the *project* you are
+#. Go to the menu *Projects managed* and select the *project* you are
    working on.
 #. Click *Administer Users*
 #. Select the user or users you wish to deactivate
@@ -530,15 +542,17 @@ care.
 
 To reactivate the users, do the same, but click *Activate* instead.
 
-How can I remove a user (or users) from my project?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _remove-user:
+
+Remove a user (or users) from your project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before doing this, bear in mind that it will result in all their files
 in your project being deleted. Are you sure that this is what you want?
 If so:
 
 -  `Login to SAFE <safe-guide-users.html#login>`__
--  Go to the Menu *Projects managed* and select the *project* you wish
+-  Go to the menu *Projects managed* and select the *project* you wish
    to work on. This will display a screen with a variety of options for
    managing the project.
 -  Click *Administer Users*
@@ -553,11 +567,13 @@ so that they will not be able to use your time. In addition, if a user
 does not belong to any other project, their account on the service
 machine will be closed.
 
-How can I send a mailing to all users in my project
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _mail-users:
+
+Send a mailing to all users in your project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  `Login to SAFE <safe-guide-users.html#login>`__
--  Go to the Menu *Projects Managed* and select the *project* you wish
+-  Go to the menu *Projects Managed* and select the *project* you wish
    to work on. This will display a screen with a variety of options for
    managing the project.
 -  By *Project mailings* click on *View*
@@ -570,17 +586,16 @@ How can I send a mailing to all users in my project
    this will wipe the content of the email. The *Abort* option will take
    you out of the mailing page completely.
 
-| 
-
 Tracking your Project Usage
 ---------------------------
 
-How to check the current state of your project's time and space
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _check-state:
 
-`Login to SAFE <safe-guide-users.html#login>`__. Then:
+Check the current state of your project's time and space
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Go to the Menu *Projects managed* and select the *project* you wish
+#. `Login to SAFE <safe-guide-users.html#login>`__.
+#. Go to the menu *Projects managed* and select the *project* you wish
    to work on.
 #. Under *Project groups* you can see the current state of each project
    group's budgets. If it uses disk quotas, you will see these, together
@@ -595,13 +610,15 @@ values may not all be completely up-to-date. If there is a lot of
 activity in your project, the numbers shown could be significantly
 different from the current ones.
 
-How to track what my project's users and project groups are doing?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _track-users-groups:
+
+Track what your project's users and project groups are doing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This can be done using the Report Generator
 
 #. `Login to SAFE <safe-guide-users.html#login>`__.
-#. Go to the Menu *Service information* and select *Report generator*
+#. Go to the menu *Service information* and select *Report generator*
 #. Choose a report format: HTML, PDF or CSV (comma-separated values—good
    for input to Excel, *etc.*)
 #. Select the start and end dates of the period you are interested in
@@ -610,14 +627,13 @@ This can be done using the Report Generator
 #. Select the information you need.
 #. Click *Generate Report*
 
+.. _request-reports:
 
-.. _phist:
-
-How to request automatic project reports
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Request automatic project reports
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. `Login to SAFE <safe-guide-users.html#login>`__.
-#. Go to the Menu *Projects Managed* and select the *project* you wish
+#. Go to the menu *Projects Managed* and select the *project* you wish
    to work on. This will display a screen with a variety of options for
    managing the project.
 #. Click on *Update*
@@ -626,10 +642,12 @@ How to request automatic project reports
 #. Set the *Frequency of Automatic Reports* to the preferred frequency.
 #. Click *Update* to confirm the changes.
 
-How to check how much space my project's users are occupying
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _check-space:
 
-Use the Report Generator (see the `previous question <#phist>`__), and
+Check how much space my project's users are occupying
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use the Report Generator (see :ref:`request-reports`), and
 select *User disk use*. The Report Generator displays the history of
 disk use—to see the current use, make sure that the reporting period
 includes the present moment. The disk usage values known to the database
@@ -642,12 +660,13 @@ which belongs to more than one project, the disk usage shown for that
 account will be the total that the account is using in all those
 projects combined.
 
-How to request more resources (AUs and disk space)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _request-more-resources:
 
-If you need more home or work space, contact the
-`ATI research computing helpdesk <mailto:research-computing-support@turing.ac.uk>`__. We will always
-receive such requests sympathetically, and it is likely that we will be
-able to allocate some more to your project.
+Request more resources (AUs and disk space)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+If you need more home or work space, contact the Turing's Research
+Computing Service `helpdesk
+<mailto:research-computing-support@turing.ac.uk>`__. We will always
+receive such requests sympathetically, and it is likely that we will
+be able to allocate some more to your project.
