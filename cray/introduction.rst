@@ -46,25 +46,25 @@ Urika is currently being run for the Turing's researchers as an Early Access Ser
 
 This section explains how Urika's Early Access Service operates:
 
-#. There is one SAFE *Project Code* for the Early Access Service.
-#. This *Project Code* can be obtained by contacting the Turing's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
-#. There are no limitations on user disk quotas.
-#. There is no batch queuing software provided. A job will only execute if there are resources available. If sufficient resources are not available then the user will have to try and submit later.
-#. There is no procedure in place for resolving disagreements on resource usage and allocations.
-#. There is NO backup on any of the 3 filesystems users have access to.
-#. There is NO disaster recovery.
+- There is one SAFE *Project Code* for the Early Access Service.
+- This *Project Code* can be obtained by contacting the Turing's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
+- There are no limitations on user disk quotas.
+- There is no batch queuing software provided. A job will only execute if there are resources available. If sufficient resources are not available then the user will have to try and submit later.
+- There is no procedure in place for resolving disagreements on resource usage and allocations.
+- There is **no** backup on any of the 3 filesystems users have access to.
+- There is **no** disaster recovery.
 
 .. _restrictions:
 
 Usage Restrictions 
 ------------------
 
-#. Urika users must not make any public presentation or publish any paper or report on the Cray Urika-GX service, its hardware, software, or its performance without receiving prior express written consent from Cray. Users must provide any results from work on the Cray Urika-GX service, and the methodology as to how the results were obtained, to Cray. Cray is allowed to use such results used in marketing collateral; press releases, white papers, etc. Cray may share these results with Intel.  
-#. Urika users must therefore not make any public presentation or publish any paper or report on the Cray Urika-GX service, its hardware or software or its performance without receiving prior express written consent from the Turing's Research Computing Service Manager
+- Urika users must not make any public presentation or publish any paper or report on the Cray Urika-GX service, its hardware, software, or its performance without receiving prior express written consent from Cray. Users must provide any results from work on the Cray Urika-GX service, and the methodology as to how the results were obtained, to Cray. Cray is allowed to use such results used in marketing collateral; press releases, white papers, etc. Cray may share these results with Intel.  
+- Urika users must therefore not make any public presentation or publish any paper or report on the Cray Urika-GX service, its hardware or software or its performance without receiving prior express written consent from the Turing's Research Computing Service Manager
 
 .. _training:
 
 Training Materials 
 ------------------
 
-#. `Cray Urika-GX training course slides <https://cray.app.box.com/v/ati-training-dec-2017>`_, Cray, December 2017. An overview of the hardware, the software stack, use of applications (including Hadoop, Spark, Cray Graph Engine, Jupyter Notebooks), resource management and case studies. 
+- `Cray Urika-GX training course slides <https://cray.app.box.com/v/ati-training-dec-2017>`_, Cray, December 2017. An overview of the hardware, the software stack, use of applications (including Hadoop, Spark, Cray Graph Engine, Jupyter Notebooks), resource management and case studies. 
