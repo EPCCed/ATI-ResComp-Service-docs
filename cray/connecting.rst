@@ -86,7 +86,7 @@ In future, you can start the tunnel as follows:
 
 #. Click the 'Tunnelling' icon.
 #. The MobaSSHTunnel window will appear.
-#. Click the Stop icon by the tunnel you want to stop.
+#. Click the Start icon by the tunnel you want to stop.
 
 In future, you can stop the tunnel as follows:
 
