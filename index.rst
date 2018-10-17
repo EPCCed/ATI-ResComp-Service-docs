@@ -48,6 +48,7 @@ Contents
    cray/introduction
    cray/connecting
    cray/data-transfer
+   cray/using
    cray/troubleshooting
 
 Related services
