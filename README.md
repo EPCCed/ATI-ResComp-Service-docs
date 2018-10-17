@@ -1,8 +1,8 @@
 # ATI-ResComp-Service-docs
 
-Source for documentation for the ATI Research Computing Services, a data science platform hosted by [EPCC](http://www.epcc.ed.ac.uk) for the [Alan Turing Institute](http://www.turing.ac.uk).
+Source for documentation for the Alan Turing Institute Research Computing Service, data science platforms hosted by [EPCC](http://www.epcc.ed.ac.uk) for the [Alan Turing Institute](http://www.turing.ac.uk).
 
-For the current, rendered, documentation, see [ATI Research Computing Service](http://ati-rescomp-service-docs.readthedocs.io/en/latest/index.html) on [Read the Docs](https://readthedocs.org).
+For the current, rendered, documentation, see [Alan Turing Institute Research Computing Service](http://ati-rescomp-service-docs.readthedocs.io/en/latest/index.html) on [Read the Docs](https://readthedocs.org).
 
 The [Sphinx](http://www.sphinx-doc.org/) Python documentation generator is used to create HTML documentation from these sources.
 

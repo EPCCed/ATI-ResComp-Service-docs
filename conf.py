@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# ATI documentation build configuration file, created by
-# sphinx-quickstart
+# Alan Turing Institute Research Computing Service documentation build
+# configuration file, created by sphinx-quickstart
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -49,8 +49,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ATI Research Computing Service'
-copyright = u'2017, EPCC'
+project = u'Alan Turing Institute Research Computing Service'
+copyright = u'2017-2018, The University of Edinburgh'
 author = u'EPCC'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -206,7 +206,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ATIServicedoc'
+htmlhelp_basename = 'AtiResearchComputingServiceDoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -228,8 +228,11 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'ATIService.tex', u'ATI Service Documentation',
-     u'EPCC', 'manual'),
+    (master_doc,
+     'AtiResearchComputingService.tex',
+     u'Alan Turing Institute Research Computing Service Documentation',
+     u'EPCC',
+     'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -258,8 +261,11 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'atiservice', u'ATI Service Documentation',
-     [author], 1)
+    (master_doc,
+     'ati_research_computing_service',
+     u'Alan Turing Institute Research Computing Service Documentation',
+     [author],
+     1)
 ]
 
 # If true, show URL addresses after external links.
@@ -272,8 +278,12 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'ATIService', u'ATI Service Documentation',
-     author, 'ATIService', 'One line description of project.',
+    (master_doc,
+     'AtiResearchComputingService',
+     u'Alan Turing Institute Research Computing Service Documentation',
+     author,
+     'AtiResearchComputingService',
+     'Alan Turing Institute Research Computing Service.',
      'Miscellaneous'),
 ]
 

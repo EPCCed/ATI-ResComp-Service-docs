@@ -1,30 +1,23 @@
-ATI SAFE Overview
-=================
+Alan Turing Institute SAFE Overview
+===================================
 
-The SAFE is a web-based application that is used for:
+The Turing's SAFE is a web-based application that is used for:
 
-* Administering ATI service user accounts
+* Administering Alan Turing Institute Research Computing Service user accounts.
 * Managing account a project resources (kAU, disk quotas, etc.)
-* Reporting on usage of the system
-* Helpdesk and support
+* Reporting on usage of the system.
+* Helpdesk and support.
 
-ATI SAFE for individual users
------------------------------
+SAFE for individual users
+-------------------------
 
-All ATI users have accounts on the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_ through which they can view the resources they have access to, administer their account,
-query their usage of the service, and submit support requests.
+All users have accounts on the Turing's `SAFE <https://safe.epcc.ed.ac.uk/ati>`_ through which they can view the resources they have access to, administer their account, query their usage of the service, and submit support requests.
 
-More information on performing these tasks can be found in the
-:doc:`safe-guide-users` chapter.
+More information on performing these tasks can be found in :doc:`safe-guide-users`.
 
-ATI SAFE for project leaders
-----------------------------
+SAFE for project leaders
+------------------------
 
-Project leaders (PI's and any designated project managers) can also
-use the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_ to approve requests to join the project, manage their
-project resources on the ATI service, and generate reports on the project 
-usage on the ATI service.
+Project leaders (PI's and any designated project managers) can also use the Turing's `SAFE <https://safe.epcc.ed.ac.uk/ati>`_ to approve requests to join the project, manage their project resources on the Turing's Research Computing Service, and generate reports on the project usage on the Turing's Research Computing Service.
 
-More information on performing these tasks can be found in the
-:doc:`safe-guide-pi` chapter.
-
+More information on performing these tasks can be found in :doc:`safe-guide-pi`.

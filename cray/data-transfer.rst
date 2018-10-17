@@ -1,7 +1,7 @@
-Data transfer to and from the ATI Cray Urika
-============================================
+Data transfer to and from the Turing's Cray Urika-GX service
+============================================================
 
-This chapter explains how to transfer data to and from the ATI Cray Urika service. This requires a user account on BOTH the Urika and hydra-vpn.epcc.ed.ac.uk. See the chapter :doc:`introduction` for instructions on how to get these user accounts.
+This chapter explains how to transfer data to and from the Turing's Cray Urika-GX service ("Urika"). This requires a user account on BOTH Urika and hydra-vpn.epcc.ed.ac.uk. See :doc:`introduction` for instructions on how to get these user accounts.
 
 The instructions are based upon using either the SCP secure copy command or SFTP secure file transfer command in bash shell-type environments (e.g. Linux command-line, Mac OS command-line or Git for Windows under Windows).
 

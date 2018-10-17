@@ -1,9 +1,9 @@
-Connecting to the ATI Cray Urika
-=================================
+Connecting to the Turing's Cray Urika-GX service
+================================================
 
-This chapter explains how to connect to the ATI Cray Urika service. This requires a user account on BOTH the Urika and hydra-vpn.epcc.ed.ac.uk. See the chapter :doc:`introduction` for instructions on how to get these user accounts.
+This chapter explains how to connect to the Turing's Cray Urika-GX service ("Urika"). This requires a user account on BOTH Urika and hydra-vpn.epcc.ed.ac.uk. See the chapter :doc:`introduction` for instructions on how to get these user accounts.
 
-Access to the ATI Cray Urika service is via SSH. The applications software on Cray Urika itself can be accessed via a web browser. This chapter explains how to setup an SSH tunnel from hydra-vpn.epcc.ed.ac.uk to Cray Urika so that a web browser can be used to access the applications software. It also explains how to access Cray Urika's command line directly.
+Access to Urika is via SSH. The applications software on Urika itself can be accessed via a web browser. This chapter explains how to setup an SSH tunnel from hydra-vpn.epcc.ed.ac.uk to Urika so that a web browser can be used to access the applications software. It also explains how to access Urika's command line directly.
 
 An overview of how to connect is as follows. Instructions are provided for:
 
@@ -14,32 +14,36 @@ Other SSH client software and web browsers can also be used if they are suitably
 
 Connecting involves the following steps:
 
-1. `Set up an SSH tunnel to Cray Urika`_.
-2. `Modify the hosts file`_.
-3. `Configure web browser to access Cray Urika's applications software`_.
-4. `Use web browser to access Cray Urika's applications software`_.
+1. :ref:`setup-ssh-tunnel`.
+2. :ref:`modify-hosts`.
+3. :ref:`configure-browser`.
+4. :ref:`use-browser`.
 
 Alternatively you can:
 
-* `Connect to Cray Urika via the command-line`_.
+* :ref:`connect-cli`.
 
 In the following:
 
 * Replace ``your-hydra-vpn-username`` with your hydra-vpn.epcc.ed.ac.uk username.
-* Replace ``your-urika-username`` with your Cray Urika username.
+* Replace ``your-urika-username`` with your Urika username.
 
-Set up an SSH tunnel to Cray Urika
-----------------------------------
+.. _setup-ssh-tunnel:
+
+Set up an SSH tunnel to Urika
+-----------------------------
 
 If you are a Windows user, you can do one of:
 
-* `Set up an SSH tunnel using PuTTY`_.
-* `Set up an SSH tunnel using PuTTY and the Command Prompt`_.
-* `Set up an SSH tunnel using Git for Windows`_.
+* :ref:`ssh-tunnel-putty`.
+* :ref:`ssh-tunnel-putty-prompt`.
+* :ref:`ssh-tunnel-git`.
 
 If you are a MacOS or Linux user, you can:
 
-* `Set up an SSH tunnel using ssh`_.
+* :ref:`ssh-tunnel-ssh`.
+
+.. _ssh-tunnel-putty:
 
 Set up an SSH tunnel using PuTTY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -72,7 +76,9 @@ Set up an SSH tunnel using PuTTY
 
 10. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
-Now, skip down to `Modify the hosts file`_.
+Now, skip down to :ref:`modify-hosts`.
+
+.. _ssh-tunnel-putty-prompt:
 
 Set up an SSH tunnel using PuTTY and the Command Prompt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -85,7 +91,9 @@ Set up an SSH tunnel using PuTTY and the Command Prompt
 
 3. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
-Now, skip down to `Modify the hosts file`_.
+Now, skip down to :ref:`modify-hosts`.
+
+.. _ssh-tunnel-git:
 
 Set up an SSH tunnel using Git for Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,7 +107,9 @@ Set up an SSH tunnel using Git for Windows
 
     ssh -D 2222 <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
-Now, skip down to `Modify the hosts file`_.
+Now, skip down to :ref:`modify-hosts`.
+
+.. _ssh-tunnel-ssh:
 
 Set up an SSH tunnel using ssh
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -110,10 +120,12 @@ Set up an SSH tunnel using ssh
 
     ssh -D 2222 <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
+.. _modify-hosts:
+
 Modify the hosts file
 ----------------------
 
-The ``hosts`` file helps to resolves domain names without going via a DNS server. If IP address is found for a domain name then that domain name is used. Here, it is used to map Urika's IP addresses to Urika's domain names.
+The ``hosts`` file helps to resolves domain names without going via a DNS server. If IP address is found for a domain name then that domain name is used. Here, it is used to map Urika's IP addresses to domain names.
 
 1. Edit the ``hosts`` file. This can be found in the following location:
 
@@ -154,18 +166,22 @@ Here is an example file with these lines added ::
     172.24.40.11 urika1.turing.ac.uk
     172.24.40.12 urika2.turing.ac.uk
 
-Configure web browser to access Cray Urika's applications software
-------------------------------------------------------------------
+.. _configure-browser:
 
-Once you have set up an SSH tunnel and modified the ``hosts`` file, you now need to configure your web browser to access Cray Urika's applications software.
+Configure web browser to access Urika's applications software
+-------------------------------------------------------------
+
+Once you have set up an SSH tunnel and modified the ``hosts`` file, you now need to configure your web browser to access Urika's applications software.
 
 If you are a Windows, MacOS or Linux user, you can:
 
-* `Configure Mozilla Firefox`_.
+* :ref:`configure-firefox`.
 
 If you are a Windows user, you can alternatively:
 
-* `Configure Internet Explorer or Google Chrome on Windows`_.
+* :ref:`configure-ie-chrome-windows`.
+
+.. _configure-firefox:
 
 Configure Mozilla Firefox
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -203,14 +219,16 @@ Configure Mozilla Firefox
 
 8. Press 'OK'.
 
-Now, skip down to `Use web browser to access Cray Urika's applications software`_.
+Now, skip down to :ref:`use-browser`.
+
+.. _configure-ie-chrome-windows:
 
 Configure Internet Explorer or Google Chrome on Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Both Internet Explorer and Google Chrome use Windows Internet Options.
 
-**Note:** Changing the Internet Options affects Windows as a whole. You may want to `Configure Mozilla Firefox`_ and use it instead if you do not want a system-wide change.
+**Note:** Changing the Internet Options affects Windows as a whole. You may want to :ref:`configure-firefox` and use it instead if you do not want a system-wide change.
 
 1. Open Internet Options:
 
@@ -257,18 +275,20 @@ Both Internet Explorer and Google Chrome use Windows Internet Options.
 
 10. Click the 'OK' button
 
-Now, skip down to `Use web browser to access Cray Urika's applications software`_.
+Now, skip down to :ref:`use-browser`.
 
-Use web browser to access Cray Urika's applications software
-------------------------------------------------------------
+.. _use-browser:
 
-Once you have set up an SSH tunnel, modified the ``hosts`` file and configured your web browser, you can now use your web browser to connect to Cray Urika's applications software user interface.
+Use web browser to access Urika's applications software
+-------------------------------------------------------
+
+Once you have set up an SSH tunnel, modified the ``hosts`` file and configured your web browser, you can now use your web browser to connect to Urika's applications software user interface.
 
 Enter::
 
     http://urika1.turing.ac.uk/home
 
-into your browser and the following view of the Urika user interface will appear.
+into your browser and the following view of Urika's user interface will appear.
 
 .. image:: urika.PNG
 
@@ -277,25 +297,29 @@ If you are using Internet Explorer or Google Chrome and you get a warning that `
 1. Click 'More information'
 2. Click 'Go on to the webpage (not recommended)'
 
-Connect to Cray Urika via the command-line
-------------------------------------------
+.. _connect-cli:
 
-The commands above to `Set up an SSH tunnel to Cray Urika`_ also connect to hydra-vpn.epcc.ed.ac.uk via the command-line.
+Connect to Urika via the command-line
+-------------------------------------
+
+The commands above to :ref:`setup-ssh-tunnel` also connect to hydra-vpn.epcc.ed.ac.uk via the command-line.
 
 If you do not care about tunnelling or using a web browser then the commands are simpler.
 
 If you are a Windows user, you can do one of:
 
-* `Connect to Cray Urika using PuTTY`_.
-* `Connect to Cray Urika using PuTTY and the Command Prompt`_.
-* `Connect to Cray Urika using Git for Windows`_.
+* :ref:`connect-urika-putty`.
+* :ref:`connect-urika-putty-prompt`.
+* :ref:`connect-urika-git`.
 
 If you are a MacOS or Linux user, you can:
 
-* `Connect to Cray Urika using ssh`_.
+* :ref:`connect-urika-ssh`.
 
-Connect to Cray Urika using PuTTY
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _connect-urika-putty:
+
+Connect to Urika using PuTTY
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Start PuTTY.
 
@@ -313,10 +337,12 @@ Connect to Cray Urika using PuTTY
 
 6. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
-Now, skip down to `Connect to Cray Urika from hydra-vpn.epcc.ed.ac.uk`_.
+Now, skip down to :ref:`connect-urika-hydra`.
 
-Connect to Cray Urika using PuTTY and the Command Prompt
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _connect-urika-putty-prompt:
+
+Connect to Urika using PuTTY and the Command Prompt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Start a Command Prompt.
 
@@ -326,10 +352,12 @@ Connect to Cray Urika using PuTTY and the Command Prompt
 
 3. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
-Now, skip down to `Connect to Cray Urika from hydra-vpn.epcc.ed.ac.uk`_.
+Now, skip down to :ref:`connect-urika-hydra`.
 
-Connect to Cray Urika using Git for Windows
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _connect-urika-git:
+
+Connect to Urika using Git for Windows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Start a Git Bash command prompt:
 
@@ -340,10 +368,12 @@ Connect to Cray Urika using Git for Windows
 
     ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
-Now, skip down to `Connect to Cray Urika from hydra-vpn.epcc.ed.ac.uk`_.
+Now, skip down to :ref:`connect-urika-hydra`.
 
-Connect to Cray Urika using ssh
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _connect-urika-ssh:
+
+Connect to Urika using ssh
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open a Terminal.
 
@@ -351,10 +381,12 @@ Connect to Cray Urika using ssh
 
     ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
-Connect to Cray Urika from hydra-vpn.epcc.ed.ac.uk
---------------------------------------------------
+.. _connect-urika-hydra:
 
-Once you have logged in to hydra-vpn.epcc.ed.ac.uk, you can log into Cray Urika, by connecting to one of its login nodes, via the command-line, as follows.
+Connect to Urika from hydra-vpn.epcc.ed.ac.uk
+---------------------------------------------
+
+Once you have logged in to hydra-vpn.epcc.ed.ac.uk, you can log into Urika, by connecting to one of its login nodes, via the command-line, as follows.
 
 Either, enter::
 
@@ -374,6 +406,8 @@ Urika has 2 login nodes:
 
 * ``urika1``: Alias: ``u1`` (as used above). IP address: 172.24.40.11.
 * ``urika2``: Alias: ``u2`` (as used above). IP address: 172.24.40.12.
+
+.. tested-platforms:
 
 Tested platforms and tools
 --------------------------
@@ -405,6 +439,4 @@ These instructions have been tested on the following platforms and tools.
 Use of SSH keys
 ---------------
 
-Using SSH keys with an SSH Agent can be used to make access to resources such as Urika more convenient.  Further information on how to do this is available in the 
-`Cirrus HPC service documentation <https://cirrus.readthedocs.io/en/latest/user-guide/connecting.html#making-access-more-convenient-using-a-ssh-agent>`_
-  
+Using SSH keys with an SSH Agent can be used to make access to resources such as Urika more convenient.  Further information on how to do this is available in the `Cirrus HPC service documentation <https://cirrus.readthedocs.io/en/latest/user-guide/connecting.html#making-access-more-convenient-using-a-ssh-agent>`_.

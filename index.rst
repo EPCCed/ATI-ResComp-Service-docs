@@ -1,26 +1,26 @@
 .. include:: header.rst
    
-ATI Research Computing Service
-==============================
+Alan Turing Institute Research Computing Service
+================================================
   
-The ATI Research Computing Service are data science platforms hosted by EPCC for the Alan Turing Institute.
+The Alan Turing Institute Research Computing Service are data science platforms hosted by `EPCC <https://www.epcc.ed.ac.uk>`_ for the `Alan Turing Institute <https://www.turing.ac.uk>`_.
 
-The ATI Research Computing Service consists of: 
+The Alan Turing Institute Research Computing Service consists of: 
 
 - a Helpdesk, run by EPCC.
-- a Cray Urika GX system. 
+- a Cray Urika-GX service.
 - the Alan Turing Institute Remote Access Service (Atiras), a Secure Safe Haven with an Intel cluster.
 
 This documentation contains:
 
 - :ref:`Helpdesk`: general information on how to contact the Helpdesk.
-- :ref:`ATISAFEDocumentation`: general information on how to use the ATI SAFE for helpdesk and support, managing user accounts and project research computing resources, and obtaining resource usage reports.
-- :ref:`CrayUrikaUserGuide`: general information on how to access, connect to and use the Cray Urika GX system. 
+- :ref:`SafeDocumentation`: general information on how to use the Turing's SAFE for helpdesk and support, managing user accounts and project research computing resources, and obtaining resource usage reports.
+- :ref:`CrayUrikaGxUserGuide`: general information on how to access, connect to and use the Turing's Cray Urika-GX service.
 - :ref:`AtirasSecureSafeHavenIntelUserGuide`: general information on how to access, connect to and use Atiras.
 
-How we collect, use and share information about your use of the service are explained in the  :doc:`helpdesk/personal-data-privacy-policy`.
+How we collect, use and share information about your use of the service are explained in the :doc:`helpdesk/personal-data-privacy-policy`.
 
-How the information you provide is used to administer your use of the services through the ATI SAFE helpdesk software is explained in the `SAFE Privacy Policy <https://safe.epcc.ed.ac.uk/ati/privacy_policy.jsp>`_.
+How the information you provide is used to administer your use of the services through SAFE is explained in the `SAFE Privacy Policy <https://safe.epcc.ed.ac.uk/ati/privacy_policy.jsp>`_.
 
 Contents
 --------
@@ -35,8 +35,8 @@ Contents
  
 .. toctree::
    :maxdepth: 2
-   :caption: ATI SAFE Documentation
-   :name: ATISAFEDocumentation
+   :caption: SAFE Documentation
+   :name: SafeDocumentation
 
    safe-guide/introduction
    safe-guide/safe-guide-users
@@ -44,8 +44,8 @@ Contents
    
 .. toctree::
    :maxdepth: 2
-   :caption: Cray Urika User Guide
-   :name: CrayUrikaUserGuide
+   :caption: Cray Urika-GX User Guide
+   :name: CrayUrikaGxUserGuide
 
    cray/introduction
    cray/connecting
@@ -65,7 +65,7 @@ Contents
 Related services
 ----------------
 
-As an alternative to using the ATI Research Computing Service, you may also want to consider `Cirrus <http://www.cirrus.ac.uk/>`_, an EPSRC Tier-2 National HPC Facility available for users in both academia and industry for computational, simulation, modelling, and data science challenges.
+As an alternative to using the Alan Turing Institute Research Computing Service, you may also want to consider `Cirrus <http://www.cirrus.ac.uk/>`_, an EPSRC Tier-2 National HPC Facility available for users in both academia and industry for computational, simulation, modelling, and data science challenges.
 
 `hpc-uk <http://www.hpc-uk.ac.uk/>`_ provides information about organisations across the UK, including EPCC, that offer access to HPC infrastructures and related services such as training.
 
