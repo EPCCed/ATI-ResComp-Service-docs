@@ -76,27 +76,27 @@ If you are one of your project's researcher administrators or researcher develop
 
 Note: if you are a research administrator or researcher developer wanting to access virtual machines both in the build arena and Secure Safe Haven then you will need all 4 accounts.
 
-You can request user accounts for each of these using your account on the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_.
+You can request user accounts for each of these using your account on the Turing's `SAFE <https://safe.epcc.ed.ac.uk/ati>`_.
 
-Instructions on getting an account for the ATI SAFE and using a *Project Code* to request access to the ATI's research computing resources are in the :doc:`../safe-guide/safe-guide-users` section of this User Guide.
+Instructions on getting an account for the Turing's SAFE and using a *Project Code* to request access to the Turing's research computing resources, including Atiras, are in the :doc:`../safe-guide/safe-guide-users` section of this User Guide.
 
-This *Project Code* entry can be obtained by contacting the ATI's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
+This *Project Code* entry can be obtained by contacting the Turing's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
 
-If your request for access is successful, you will receive emails from the `ATI SAFE <https://safe.epcc.ed.ac.uk/ati>`_ with the information for your user accounts for the Atiras portal, the Secure Safe Haven and the build arena.
+If your request for access is successful, you will receive emails from the Turing's `SAFE <https://safe.epcc.ed.ac.uk/ati>`_ with the information for your user accounts for the Atiras portal, the Secure Safe Haven and the build arena.
 
 Access is via the `Atiras portal <https://secure.epcc.ed.ac.uk/ati/>`_
 
 Early Access Service 
 --------------------
 
-When Atiras is initially made available to the ATI's researchers it will be run as an Early Access service. This purpose of this Early Access service will be to establish how best to later configure the service to meet the ATI's researchers' needs. The Early Access service will therefore be replaced at a later to be specified date.
+Atiras is currently being run for the Turing's researchers as an Early Access Service. The purpose of this Early Access Service is to establish how best to later configure the service to meet the needs of the Turing's researchers. The Early Access Service will be replaced at a Future date.
 
-This section explains how the Early Access service on Atiras operates.
+This section explains how Atiras's Early Access Service operates:
 
-#. There will be one ATI SAFE *Project Code* for the Early Access Service.
-#. This *Project Code* can be obtained by contacting the ATI Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
-#. During the Early Access Service there are no limitations on user disk quotas.
-#. There is no batch queuing software on the system. A job will only execute if there are resources available. If sufficient resources are not available then the user will have to try and submit later. 
-#. During the Early Access Service there is no procedure in place for resolving disagreements on resource usage and allocations.
-#. There is NO backup on any of the filesystems users have access to.
-#. There is NO disaster recovery.
+- There is one SAFE *Project Code* for the Early Access Service.
+- This *Project Code* can be obtained by contacting the Turing's Research Computing Service Manager via an email to research-computing-support@turing.ac.uk.
+- There are no limitations on user disk quotas.
+- There is no batch queuing software provided. A job will only execute if there are resources available. If sufficient resources are not available then the user will have to try and submit later.
+- There is no procedure in place for resolving disagreements on resource usage and allocations.
+- There is **no** backup on any of the 3 filesystems users have access to.
+- There is **no** disaster recovery.
