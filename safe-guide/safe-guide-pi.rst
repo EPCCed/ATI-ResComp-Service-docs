@@ -1,5 +1,5 @@
-Project Leaders
-===============
+SAFE for Project Leaders
+========================
 
 Project Leaders can manage the resources and users associated with
 their projects through the Turing's SAFE.

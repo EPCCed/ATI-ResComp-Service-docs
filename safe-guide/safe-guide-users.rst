@@ -1,5 +1,5 @@
-Individual Users
-================
+SAFE for Individual Users
+=========================
 
 The Turing's `SAFE <https://safe.epcc.ed.ac.uk/ati>`_ is an online user
 service management system. Through SAFE, individual users can request
