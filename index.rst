@@ -50,6 +50,7 @@ Contents
    cray/introduction
    cray/connecting
    cray/data-transfer 
+   cray/using
    cray/troubleshooting
 
 .. toctree::
@@ -61,6 +62,13 @@ Contents
    intel/connecting
    intel/using_build_arena
    intel/using_secure_safe_haven
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Success Stories
+   :name: SuccessStories
+
+   publications/index
 
 Related services
 ----------------
