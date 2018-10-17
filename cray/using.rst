@@ -5,6 +5,8 @@ This chapter provides miscellaneous hints and tips on using the Turing's Cray Ur
 
 See the chapter :doc:`connecting` for instructions on how to connect to Urika.
 
+.. _view-doc:
+
 View documentation
 ------------------
 
@@ -12,6 +14,16 @@ Detailed documentation on Urika and its software and services is available on th
 
 #. Within a web browser, visit http://urika1.turing.ac.uk/home (see `Use web browser to access Urika's applications software <connecting.html#use-browser>`__).
 #. Click on Learning Resources on the home page, or visit http://urika1.turing.ac.uk/documentation.
+
+Submit jobs
+-----------
+
+To access notes on submitting jobs using the various job submission mechanisms available on Urika:
+
+#. :ref:`view-doc` as described above.
+#. Scroll down the page and click on "Job Submission Notes".
+
+Alternatively, within a web browser, visit http://urika1.turing.ac.uk/static/documentation/notebooks/ATI-Job-Submission.pdf.
 
 Open Jupyter notebook
 ---------------------

@@ -68,4 +68,3 @@ Training Materials
 ------------------
 
 #. `Cray Urika-GX training course slides <https://cray.app.box.com/v/ati-training-dec-2017>`_, Cray, December 2017. An overview of the hardware, the software stack, use of applications (including Hadoop, Spark, Cray Graph Engine, Jupyter Notebooks), resource management and case studies. 
-#. `Job submission <http://urika1.turing.ac.uk/static/documentation/notebooks/ATI-Job-Submission.pdf>`_, Cray. Slides explaining tvarious job submission mechanisms available on Urika. Note: these are only available on Urika itself via a web browser configured to access Urika (see :doc:`connecting`). 
