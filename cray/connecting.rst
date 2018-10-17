@@ -7,7 +7,7 @@ Access to Urika is via SSH. The applications software on Urika itself can be acc
 
 An overview of how to connect is as follows. Instructions are provided for:
 
-* Windows: using `PuTTY <https://putty.org>`_ or the ssh client in `Git for Windows <https://git-for-windows.github.io/>`_ SSH clients and Mozilla Firefox, Internet Explorer and Google Chrome web browsers.
+* Windows: using `MobaXterm <https://mobaxterm.mobatek.net/>`_ (recommended), `PuTTY <https://putty.org>`_ or the ssh client in `Git for Windows <https://git-for-windows.github.io/>`_ SSH clients and Mozilla Firefox, Internet Explorer and Google Chrome web browsers.
 * MacOS and Linux: using ssh client and Mozilla Firefox web browser.
 
 Other SSH client software and web browsers can also be used if they are suitably configured.
@@ -35,6 +35,7 @@ Set up an SSH tunnel to Urika
 
 If you are a Windows user, you can do one of:
 
+* :ref:`ssh-tunnel-moba`.
 * :ref:`ssh-tunnel-putty`.
 * :ref:`ssh-tunnel-putty-prompt`.
 * :ref:`ssh-tunnel-git`.
@@ -43,38 +44,83 @@ If you are a MacOS or Linux user, you can:
 
 * :ref:`ssh-tunnel-ssh`.
 
+.. _ssh-tunnel-moba:
+
+Set up an SSH tunnel using MobaXterm
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#. Start MobaXterm.
+#. Click the 'Tunnelling' icon:
+
+   .. image:: MobaTunnelingIcon.PNG
+
+#. The MobaSSHTunnel window will appear.
+
+   .. image:: MobaNewSshTunnel.PNG
+
+#. Click the 'New SSH Tunnel' button.
+#. The SSH tunnel window will appear.
+
+   .. image:: MobaNewSshTunnelConfig.PNG
+
+#. Select 'Dynamic port forwarding (SOCKS proxy)'.
+#. Enter the following configuration:
+
+   * 'Forwarded port': ``2222``
+   * 'SSH server': ``hydra-vpn.epcc.ed.ac.uk``
+   * 'SSH login': ``your-hydra-vpn-username``
+   * 'SSH port': ``22``
+
+#. Click the 'Save' button.
+#. Back in the MobaSSHTunnel window, in the 'Name' field, enter ``hydra-vpn``
+
+#. Click the Start icon by the tunnel you want to start:
+
+   .. image:: MobaStartSshTunnel.PNG
+
+#. When prompted for your password, enter your hydra-vpn.epcc.ed.ac.uk password.
+#. Click the 'OK' button.
+#. Click the 'Exit' button.
+
+In future, you can start the tunnel as follows:
+
+#. Click the 'Tunnelling' icon.
+#. The MobaSSHTunnel window will appear.
+#. Click the Stop icon by the tunnel you want to stop.
+
+In future, you can stop the tunnel as follows:
+
+#. Click the 'Tunnelling' icon.
+#. The MobaSSHTunnel window will appear.
+#. Click the Stop icon by the tunnel you want to stop.
+
 .. _ssh-tunnel-putty:
 
 Set up an SSH tunnel using PuTTY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Start PuTTY.
+#. Start PuTTY.
+#. PuTTY's Configuration should appear, showing the Session configuration.
+#. In the 'HostName (or IP address)' field, enter ``hydra-vpn.epcc.ed.ac.uk``. See below.
 
-2. PuTTY's Configuration should appear, showing the Session configuration.
+   .. image:: PuTTY-Session-hydra-vpn.PNG
 
-3. In the 'HostName (or IP address)' field, enter ``hydra-vpn.epcc.ed.ac.uk``. See below.
+#. Click 'Connection', then 'SSH', then 'Tunnels' on the left-hand menu.
+#. In the 'Source port' field, enter ``2222``
+#. Click the radio button beside 'Dynamic'. See below.
 
-.. image:: PuTTY-Session-hydra-vpn.PNG
+   .. image:: PuTTY-Connection-SSH-tunnels-hydra-vpnCapture.PNG
 
-4. Click 'Connection', then 'SSH', then 'Tunnels' on the left-hand menu.
+#. Press the 'Add' button. ``D2222`` will be added to the list of 'Forwarded ports'. See below.
 
-5. In the 'Source port' field, enter ``2222``
+   .. image:: PuTTY-Add-dynamic.PNG
 
-6. Click the radio button beside 'Dynamic'. See below.
+#. Press the 'Open' button.
+#. A PuTTY terminal window will appear. This contains a login prompt. See below.
 
-.. image:: PuTTY-Connection-SSH-tunnels-hydra-vpnCapture.PNG
+   .. image:: PuTTY-hydra-terminal.PNG
 
-7. Press the 'Add' button. ``D2222`` will be added to the list of 'Forwarded ports'. See below.
-
-.. image:: PuTTY-Add-dynamic.PNG
-
-8. Press the 'Open' button.
-
-9. A PuTTY terminal window will appear. This contains a login prompt. See below.
-
-.. image:: PuTTY-hydra-terminal.PNG
-
-10. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
+#. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
 Now, skip down to :ref:`modify-hosts`.
 
@@ -83,13 +129,12 @@ Now, skip down to :ref:`modify-hosts`.
 Set up an SSH tunnel using PuTTY and the Command Prompt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Start a Command Prompt.
-
-2. Enter the command::
+#. Start a Command Prompt.
+#. Enter the command::
 
     putty.exe -ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -D 2222
 
-3. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
+#. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
 Now, skip down to :ref:`modify-hosts`.
 
@@ -98,12 +143,12 @@ Now, skip down to :ref:`modify-hosts`.
 Set up an SSH tunnel using Git for Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Start a Git Bash command prompt:
+#. Start a Git Bash command prompt:
 
-  - Either, select Start => 'Git' => 'Git Bash'.
-  - Or, enter ``Git Bash`` into the toolbar search box.
+   - Either, select Start => 'Git' => 'Git Bash'.
+   - Or, enter ``Git Bash`` into the toolbar search box.
 
-2. Enter the command::
+#. Enter the command::
 
     ssh -D 2222 <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
@@ -114,9 +159,8 @@ Now, skip down to :ref:`modify-hosts`.
 Set up an SSH tunnel using ssh
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Open a Terminal.
-
-2. Enter the command::
+#. Open a Terminal.
+#. Enter the command::
 
     ssh -D 2222 <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
@@ -127,13 +171,13 @@ Modify the hosts file
 
 The ``hosts`` file helps to resolves domain names without going via a DNS server. If IP address is found for a domain name then that domain name is used. Here, it is used to map Urika's IP addresses to domain names.
 
-1. Edit the ``hosts`` file. This can be found in the following location:
+#. Edit the ``hosts`` file. This can be found in the following location:
 
-  * Windows: ``C:\Windows\System32\drivers\etc\hosts``
-  * MacOS: ``/etc/hosts``
-  * Linux: ``/etc/hosts``
+   - Windows: ``C:\Windows\System32\drivers\etc\hosts``
+   - MacOS: ``/etc/hosts``
+   - Linux: ``/etc/hosts``
 
-2. Add the following lines::
+#. Add the following lines::
 
     172.24.40.11 urika1.turing.ac.uk
     172.24.40.12 urika2.turing.ac.uk
@@ -186,38 +230,33 @@ If you are a Windows user, you can alternatively:
 Configure Mozilla Firefox
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Start Firefox.
-
-2. Open the advanced network settings:
+#. Start Firefox.
+#. Open the advanced network settings:
 
    * If using Firefox Quantum 60.0:
 
-     1. Select Menu => 'Options'
-     2. Scroll down to Network Proxy
-     3. Click 'Settings...
+     #. Select Menu => 'Options'
+     #. Scroll down to Network Proxy
+     #. Click 'Settings...
 
    * If using Firefox ESR 52.2.0:
 
-     1. Select Menu => 'Preferences'
-     2. Click 'Advanced'
-     3. Click 'Network'
-     4. Click 'Settings...', next to 'Configure how Firefox connects to the Internet'. See below.
+     #. Select Menu => 'Preferences'
+     #. Click 'Advanced'
+     #. Click 'Network'
+     #. Click 'Settings...', next to 'Configure how Firefox connects to the Internet'. See below.
 
-.. image:: Firefox-options-advanced-network.PNG
+        .. image:: Firefox-options-advanced-network.PNG
 
-3. Click the radio button for 'Manual proxy configuration:'. 
+#. Click the radio button for 'Manual proxy configuration:'. 
+#. In the 'SOCKS Host' field, enter ``localhost``
+#. In the adjoining 'Port:' field, enter ``2222``. 
+#. Click the radio button for 'SOCKS v5'. 
+#. In the 'No proxy for:' field, enter ``localhost, 127.0.0.1, .com, .io, .net, .org``. See below.
 
-4. In the 'SOCKS Host' field, enter ``localhost``
+   .. image:: Firefox-settings.PNG
 
-5. In the adjoining 'Port:' field, enter ``2222``. 
-
-6. Click the radio button for 'SOCKS v5'. 
-
-7. In the 'No proxy for:' field, enter ``localhost, 127.0.0.1, .com, .io, .net, .org``. See below.
-
-.. image:: Firefox-settings.PNG
-
-8. Press 'OK'.
+#. Press 'OK'.
 
 Now, skip down to :ref:`use-browser`.
 
@@ -230,15 +269,16 @@ Both Internet Explorer and Google Chrome use Windows Internet Options.
 
 **Note:** Changing the Internet Options affects Windows as a whole. You may want to :ref:`configure-firefox` and use it instead if you do not want a system-wide change.
 
-1. Open Internet Options:
+#. Open Internet Options:
 
-   * Via Toolbar Search box: 
+   * Via Toolbar Search box:
+
      - Enter 'Internet Options'
 
    * Via Windows Control Panel:
 
-     1. Click 'Network and Internet'
-     2. Click 'Internet Options'
+     #. Click 'Network and Internet'
+     #. Click 'Internet Options'
 
    * Via Internet Explorer:
 
@@ -246,34 +286,29 @@ Both Internet Explorer and Google Chrome use Windows Internet Options.
 
    * Via Google Chrome:
 
-     1. Click 'Settings'
-     2. Click 'Advanced'
-     3. Click 'System'
-     4. Click 'Open proxy settings'
+     #. Click 'Settings'
+     #. Click 'Advanced'
+     #. Click 'System'
+     #. Click 'Open proxy settings'
 
-2. Click 'Connections'. See below.
+#. Click 'Connections'. See below.
 
-.. image:: Windows-InternetOptions-Connections.PNG
+   .. image:: Windows-InternetOptions-Connections.PNG
 
-3. Click 'LAN settings'.
+#. Click 'LAN settings'.
+#. Click the radio button for 'Use a proxy server for your LAN...'. See below.
 
-4. Click the radio button for 'Use a proxy server for your LAN...'. See below.
+   .. image:: Windows-InternetOptions-Connections-Advanced.PNG
 
-.. image:: Windows-InternetOptions-Connections-Advanced.PNG
+#. Click 'Advanced'.
+#. In the SOCKS field, enter: ``localhost``
+#. In the adjoining field, enter: ``2222``
+#. In the 'Exceptions:' field, enter: ``*.local; localhost; 127.0.0.1;*.com;*.io;*.net;*.org``. See below.
 
-5. Click 'Advanced'.
+   .. image:: Windows-InternetOptions-Connections-Advanced-Proxy.PNG
 
-6. In the SOCKS field, enter: ``localhost``
-
-7. In the adjoining field, enter: ``2222``
-
-8. In the 'Exceptions:' field, enter: ``*.local; localhost; 127.0.0.1;*.com;*.io;*.net;*.org``. See below.
-
-.. image:: Windows-InternetOptions-Connections-Advanced-Proxy.PNG
-
-9. Click the 'OK' button
-
-10. Click the 'OK' button
+#. Click the 'OK' button
+#. Click the 'OK' button
 
 Now, skip down to :ref:`use-browser`.
 
@@ -294,8 +329,8 @@ into your browser and the following view of Urika's user interface will appear.
 
 If you are using Internet Explorer or Google Chrome and you get a warning that ``This site is not secure`` appears:
 
-1. Click 'More information'
-2. Click 'Go on to the webpage (not recommended)'
+#. Click 'More information'
+#. Click 'Go on to the webpage (not recommended)'
 
 .. _connect-cli:
 
@@ -308,6 +343,7 @@ If you do not care about tunnelling or using a web browser then the commands are
 
 If you are a Windows user, you can do one of:
 
+* :ref:`connect-urika-moba`.
 * :ref:`connect-urika-putty`.
 * :ref:`connect-urika-putty-prompt`.
 * :ref:`connect-urika-git`.
@@ -316,26 +352,69 @@ If you are a MacOS or Linux user, you can:
 
 * :ref:`connect-urika-ssh`.
 
+.. _connect-urika-moba:
+
+Connect to Urika using MobaXterm
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#. Start MobaXterm.
+#. Click the 'Session' icon:
+
+   .. image:: MobaSessionIcon.PNG
+
+#. The Session Settings window will appear. 
+#. Click the 'SSH' icon:
+
+   .. image:: MobaSshIcon.PNG
+
+#. The Basic SSH settings will appear.
+
+   .. image:: MobaSshSessionConfig.PNG
+
+#. Click the 'Specify username' checkbox so it is checked.
+#. Enter the following configuration:
+
+   - 'Remote host': ``urika1``
+   - 'Specify username': ``your-urika-username``
+   - 'Port': ``22``
+
+#. Click the 'Network settings' tab.
+#. Click the 'Connect through SSH gateway (jump host)' checkbox so it is checked.
+#. Enter the following configuration:
+
+   - 'Gateway SSH server': ``hydra-vpn.epcc.ed.ac.uk``
+   - 'Specify username': ``your-hydra-vpn-username``
+   - 'Port': ``22``
+
+#. Click the 'OK' button.
+#. When prompted for your password, enter your hydra-vpn.epcc.ed.ac.uk password.
+#. A terminal window will appear.
+#. When prompted for your password, enter your Urika password.
+
+To connect in future:
+
+#. Double-click on ``urika1 (your-urika-username)`` in the 'User sessions' area on the left-hand side of the MobaXterm window.
+#. When prompted for your password, enter your hydra-vpn.epcc.ed.ac.uk password.
+#. A terminal window will appear.
+#. When prompted for your password, enter your Urika password.
+
 .. _connect-urika-putty:
 
 Connect to Urika using PuTTY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Start PuTTY.
+#. Start PuTTY.
+#. PuTTY's Configuration should appear, showing the Session configuration.
+#. In the 'HostName (or IP address)' field, enter ``hydra-vpn.epcc.ed.ac.uk``. See below.
 
-2. PuTTY's Configuration should appear, showing the Session configuration.
+   .. image:: PuTTY-Session-hydra-vpn.PNG
 
-3. In the 'HostName (or IP address)' field, enter ``hydra-vpn.epcc.ed.ac.uk``. See below.
+#. Press the 'Open' button.
+#. A PuTTY terminal window will appear. This contains a login prompt. See below.
 
-.. image:: PuTTY-Session-hydra-vpn.PNG
+   .. image:: PuTTY-hydra-terminal.PNG
 
-4. Press the 'Open' button.
-
-5. A PuTTY terminal window will appear. This contains a login prompt. See below.
-
-.. image:: PuTTY-hydra-terminal.PNG
-
-6. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
+#. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
 Now, skip down to :ref:`connect-urika-hydra`.
 
@@ -344,13 +423,12 @@ Now, skip down to :ref:`connect-urika-hydra`.
 Connect to Urika using PuTTY and the Command Prompt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Start a Command Prompt.
-
-2. Enter the command::
+#. Start a Command Prompt.
+#. Enter the command::
 
     putty.exe -ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
-3. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
+#. Enter your hydra-vpn.epcc.ed.ac.uk username and password.
 
 Now, skip down to :ref:`connect-urika-hydra`.
 
@@ -359,12 +437,12 @@ Now, skip down to :ref:`connect-urika-hydra`.
 Connect to Urika using Git for Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Start a Git Bash command prompt:
+#. Start a Git Bash command prompt:
 
-  - Either, select Start => 'Git' => 'Git Bash'.
-  - Or, enter ``Git Bash`` into the toolbar search box.
+   - Either, select Start => 'Git' => 'Git Bash'.
+   - Or, enter ``Git Bash`` into the toolbar search box.
 
-2. Enter the command::
+#. Enter the command::
 
     ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
@@ -375,9 +453,8 @@ Now, skip down to :ref:`connect-urika-hydra`.
 Connect to Urika using ssh
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Open a Terminal.
-
-2. Enter the command::
+#. Open a Terminal.
+#. Enter the command::
 
     ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk
 
@@ -421,6 +498,7 @@ These instructions have been tested on the following platforms and tools.
 
 * SSH clients:
 
+  - `MobaXterm <https://mobaxterm.mobatek.net/>`_ Personal Edition v10.9 Build 3656.
   - `Putty <https://putty.org>`_ 0.70 64-bit Windows.
   - `Git for Windows <https://git-for-windows.github.io/>`_ 2.15.1 on Windows 10 Enterprise.
   - OpenSSH_7.6p1, OpenSSL 1.0.2m  2 Nov 2017, provided in Git fot Windows 2.15.1.
