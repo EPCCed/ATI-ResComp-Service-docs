@@ -51,6 +51,13 @@ Contents
    cray/using
    cray/troubleshooting
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Success Stories
+   :name: SuccessStories
+
+   publications/index
+
 Related services
 ----------------
 
