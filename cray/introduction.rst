@@ -18,7 +18,7 @@ Where appropriate it contains links to Cray's documentation for the Cray Urika-G
 Hardware
 --------
 
-The Turing's Cray Urika-GX service consists of 12 compute nodes (each 2x18 core Broadwell CPU) with 256GB of memory and 60TB of storage.
+The Turing's Cray Urika-GX service consists of 12 compute nodes where each node comprises 256GB of memory, 800 GB SSD and 2x18 core Broadwell CPU. In addition there is 60TB of Lustre storage.
 
 For a detailed description of the Cray Urika-GX platform, see the `Cray website <http://www.cray.com/products/analytics/urika-gx>`_.
 
