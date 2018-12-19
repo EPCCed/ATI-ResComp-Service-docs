@@ -89,7 +89,7 @@ Access is via the `Atiras portal <https://secure.epcc.ed.ac.uk/ati/>`_
 Early Access Service 
 --------------------
 
-Atiras is currently being run for the Turing's researchers as an Early Access Service. The purpose of this Early Access Service is to establish how best to later configure the service to meet the needs of the Turing's researchers. The Early Access Service will be replaced at a Future date.
+Atiras is currently being run for the Turing's researchers as an Early Access Service. The purpose of this Early Access Service is to establish how best to later configure the service to meet the needs of the Turing's researchers. The Early Access Service will be replaced at a future date.
 
 This section explains how Atiras's Early Access Service operates:
 
