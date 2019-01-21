@@ -5,6 +5,19 @@ This chapter explains how to transfer data to and from the Turing's Cray Urika-G
 
 The instructions are based upon using either the SCP secure copy command or SFTP secure file transfer command in bash shell-type environments (e.g. Linux command-line, Mac OS command-line or Git for Windows under Windows).
 
+Lustre
+------
+
+Lustre is a high-performance parallel filesystem connected to Urika. Compute jobs can access data on Lustre in a highly-efficient way. If you have a large volume of data you can transfer it directly into Lustre, rather than keeping it in your home directory. To do this you will need to create a directory on Lustre.
+
+Create a directory in Lustre::
+
+    mkdir -p /mnt/lustre/<your-urika-username>/<directory-name>
+
+Set file permissions so that no other user can access your data::
+
+    chmod -R go+rwx /mnt/lustre/<your-urika-username>
+
 Using secure copy, SCP
 ----------------------
 
@@ -30,6 +43,10 @@ Copy a directory ``data`` from your home directory on your local machine to your
     scp -r -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" data <your-urika-username>@urika1:/home/users/<your-urika-username>/
 
 You will be prompted for your hydra-vpn.epcc.ed.ac.uk password and then your Urika password.
+
+Copy a file ``file.dat`` from your home directory on your local machine to your Lustre directory on Urika::
+
+    scp -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" file.dat <your-urika-username>@urika1:/mnt/lustre/<your-urika-username>/
 
 **Note:** The ``-o "ProxyCommand ssh your-hydra-vpn-username@hydra-vpn.epcc.ed.ac.uk -W %h:%p"`` is needed because access to the Urika is through hydra-vpn.epcc.ed.ac.uk.
 
@@ -78,6 +95,10 @@ Copy a file ``file.dat`` from your home directory on Urika to a subdirectory ``s
 Copy a directory ``data`` from your home directory on Urika to your home directory on your local machine::
 
     scp -r -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" <your-urika-username>@urika1:/home/users/<your-urika-username>/data .
+
+Copy a file ``file.dat`` from your Lustre directory on Urika to your home directory on your local machine::
+
+    scp -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" <your-urika-username>@urika1:/mnt/lustre/<your-urika-username>/file.dat .
 
 You will be prompted for your hydra-vpn.epcc.ed.ac.uk password and then your Urika password.
 
@@ -172,3 +193,26 @@ Copy a directory ``data`` from the current directory on Urika into the current d
 Exit the SFTP session::
 
     exit
+
+Using SSHFS to mount a remote directory
+---------------------------------------
+
+You can also mount a remove directory into your home directory on Urika using `SSHFS <https://github.com/libfuse/sshfs/>`_. Once mounted, you can use your directory as if it was a local directory.
+
+This command only works if your local machine supports SFTP connections.
+
+As SSHFS uses SFTP, it, by default, attempts to connect to port 22 on the local machine. If your local machine uses a non-default port then this can be specified using the ``oPort`` argument. For example, if the local port was 22222, you would provide an argument ``-oPort=22222``.
+
+For example, to mount a directory ``data`` from your home directory on your local machine to your home directory on Urika::
+
+    mkdir data
+    sshfs -o intr,large_read,auto_cache,workaround=all <your-local-username>@<your-local-machine>:data data
+
+You will be prompted for your local machine password.
+
+To remove the mount you can run, for example::
+
+    fusermount -u data
+    rmdir data
+
+**Note:** Do **not** mount directories directly onto Lustre. Urika compute nodes have no network access and so cannot access directories via a mount.
