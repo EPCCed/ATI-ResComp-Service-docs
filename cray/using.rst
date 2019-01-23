@@ -15,6 +15,8 @@ Detailed documentation on Urika and its software and services is available on th
 #. Within a web browser, visit http://urika1.turing.ac.uk/home (see `Use web browser to access Urika's applications software <connecting.html#use-browser>`__).
 #. Click on Learning Resources on the home page, or visit http://urika1.turing.ac.uk/documentation.
 
+.. _submit-jobs:
+
 Submit jobs
 -----------
 
@@ -25,6 +27,8 @@ To access notes on submitting jobs using the various job submission mechanisms a
 
 Alternatively, within a web browser, visit http://urika1.turing.ac.uk/static/documentation/notebooks/ATI-Job-Submission.pdf.
 
+.. _open-jupyter:
+
 Open Jupyter notebook
 ---------------------
 
@@ -33,6 +37,8 @@ Open Jupyter notebook
 #. A Jupyter sign-in page will open in a new browser tab, prompting you for a Username and Password. Enter your Urika username and password.
 #. Click Sign In.
 #. A Jupyter notebook page will appear in a new browser tab, displaying the contents of your home directory on Urika.
+
+.. _open-mesos:
 
 Open Apache Mesos resource manager
 ----------------------------------
@@ -48,3 +54,10 @@ Open Apache Mesos resource manager
 #. Click on the "MESOS" icon again.
 #. The Mesos dashboard will open in a new browser tab, with a dialog prompting you for a User Name and Password. Enter your Urika username and Mesos password.
 #. The Mesos dashboard will refresh with its current data.
+
+.. _best-practice:
+
+Best Practice Guide
+-------------------
+
+For a guide on best practices in the use of Urika, please see `PRACE <http://www.prace-ri.eu>`_ "Best Practice Guide - HPC for Data Science on the Cray Urika", January 2019: `HTML <http://www.prace-ri.eu/best-practice-guide-hpc-for-data-science-on-the-cray-urika/>`_ `PDF <http://www.prace-ri.eu/IMG/pdf/Best-Practice-Guide-Data-Science.pdf>`_
