@@ -17,10 +17,10 @@ Detailed documentation on Urika and its software and services is available on th
 
 .. _best-practice:
 
-Best Practice Guide
--------------------
+View Best Practice Guide
+------------------------
 
-For a guide on best practices in the use of Urika, please see `PRACE <http://www.prace-ri.eu>`_ "Best Practice Guide - HPC for Data Science on the Cray Urika", January 2019: `HTML <http://www.prace-ri.eu/best-practice-guide-hpc-for-data-science-on-the-cray-urika/>`_ `PDF <http://www.prace-ri.eu/IMG/pdf/Best-Practice-Guide-Data-Science.pdf>`_
+For a guide on best practices in the use of Urika, please see the `PRACE <http://www.prace-ri.eu>`_ "Best Practice Guide - HPC for Data Science on the Cray Urika", January 2019: `HTML <http://www.prace-ri.eu/best-practice-guide-hpc-for-data-science-on-the-cray-urika/>`_ `PDF <http://www.prace-ri.eu/IMG/pdf/Best-Practice-Guide-Data-Science.pdf>`_
 
 .. _submit-jobs:
 
