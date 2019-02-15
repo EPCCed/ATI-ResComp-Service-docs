@@ -8,15 +8,21 @@ The instructions are based upon using either the SCP secure copy command or SFTP
 Lustre
 ------
 
-Lustre is a high-performance parallel filesystem connected to Urika. Compute jobs can access data on Lustre in a highly-efficient way. If you have a large volume of data you can transfer it directly into Lustre, rather than keeping it in your home directory. To do this you will need to create a directory on Lustre.
+Lustre is a high-performance parallel filesystem connected to Urika. Compute jobs can access data on Lustre in a highly-efficient way. 
 
-Create a directory in Lustre::
+You will have been given your own directory on Lustre::
 
-    mkdir -p /mnt/lustre/<your-urika-username>/<directory-name>
+    /mnt/lustre/<your-project-code>/<your-project-code>/<your-urika-username>
 
-Set file permissions so that no other user can access your data::
+where ``<your-project-code>`` is the code of your project. By default all members of your project group can read this folder, but only you can write to it.
 
-    chmod -R go+rwx /mnt/lustre/<your-urika-username>
+You will also have access to a ``shared`` directory on Lustre::
+
+    /mnt/lustre/<your-project-code>/<your-project-code>/shared
+
+By default all members of your project group can both read and write to this folder (but no members of other projects can read or write to it).
+
+There follows examples of data transfer to and from your home directory on Lustre. If you want to transfer data to and from your project's ``shared`` directory, replace ``/<your-project-code>/<your-project-code>/<your-urika-username>`` with ``<your-project-code>/<your-project-code>/shared`` in the following.
 
 Using secure copy, SCP
 ----------------------
@@ -46,7 +52,7 @@ You will be prompted for your hydra-vpn.epcc.ed.ac.uk password and then your Uri
 
 Copy a file ``file.dat`` from your home directory on your local machine to your Lustre directory on Urika::
 
-    scp -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" file.dat <your-urika-username>@urika1:/mnt/lustre/<your-urika-username>/
+    scp -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" file.dat <your-urika-username>@urika1:/mnt/lustre/<your-project-code>/<your-project-code>/<your-urika-username>
 
 **Note:** The ``-o "ProxyCommand ssh your-hydra-vpn-username@hydra-vpn.epcc.ed.ac.uk -W %h:%p"`` is needed because access to the Urika is through hydra-vpn.epcc.ed.ac.uk.
 
@@ -98,7 +104,7 @@ Copy a directory ``data`` from your home directory on Urika to your home directo
 
 Copy a file ``file.dat`` from your Lustre directory on Urika to your home directory on your local machine::
 
-    scp -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" <your-urika-username>@urika1:/mnt/lustre/<your-urika-username>/file.dat .
+    scp -o "ProxyCommand ssh <your-hydra-vpn-username>@hydra-vpn.epcc.ed.ac.uk -W %h:%p" <your-urika-username>@urika1:/mnt/lustre/<your-project-code>/<your-project-code>/<your-urika-username>/file.dat .
 
 You will be prompted for your hydra-vpn.epcc.ed.ac.uk password and then your Urika password.
 
