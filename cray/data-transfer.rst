@@ -16,6 +16,10 @@ You will have been given your own directory on Lustre::
 
 where ``<your-project-code>`` is the code of your project. By default all members of your project group can read this folder, but only you can write to it.
 
+If you don't have such a directory, you can create one e.g.::
+
+    mkdir /mnt/lustre/<your-project-code>/<your-project-code>/<your-urika-username>
+
 You will also have access to a ``shared`` directory on Lustre::
 
     /mnt/lustre/<your-project-code>/<your-project-code>/shared
