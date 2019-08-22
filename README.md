@@ -1,6 +1,6 @@
 # ATI-ResComp-Service-docs
 
-|docs|
+[![docs](https://readthedocs.org/projects/ati-rescomp-service-docs/badge/?version=latest)](http://ati-rescomp-service-docs.readthedocs.io/?badge=latest)
 
 ## Overview
 
