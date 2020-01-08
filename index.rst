@@ -8,14 +8,14 @@ The Alan Turing Institute Research Computing Service are data science platforms 
 The Alan Turing Institute Research Computing Service consists of: 
 
 - a Helpdesk, run by EPCC.
-- a Cray Urika-GX service.
 - the Alan Turing Institute Remote Access Service (Atiras), a Secure Safe Haven with an Intel cluster.
+
+Note: the Cray Urika-GX service was closed on 31st December 2019.
 
 This documentation contains:
 
 - :ref:`Helpdesk`: general information on how to contact the Helpdesk.
 - :ref:`SafeDocumentation`: general information on how to use the Turing's SAFE for helpdesk and support, managing user accounts and project research computing resources, and obtaining resource usage reports.
-- :ref:`CrayUrikaGxUserGuide`: general information on how to access, connect to and use the Turing's Cray Urika-GX service.
 - :ref:`AtirasSecureSafeHavenIntelUserGuide`: general information on how to access, connect to and use Atiras.
 
 How we collect, use and share information about your use of the service are explained in the :doc:`helpdesk/personal-data-privacy-policy`.
@@ -42,17 +42,6 @@ Contents
    safe-guide/safe-guide-users
    safe-guide/safe-guide-pi
    
-.. toctree::
-   :maxdepth: 2
-   :caption: Cray Urika-GX User Guide
-   :name: CrayUrikaGxUserGuide
-
-   cray/introduction
-   cray/connecting
-   cray/data-transfer 
-   cray/using
-   cray/troubleshooting
-
 .. toctree::
    :maxdepth: 2
    :caption: Atiras, Secure Safe Haven and Intel cluster User Guide
